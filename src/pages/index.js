@@ -7,11 +7,14 @@ import SEO from "../components/seo";
 
 
 
-const SurveyModel = ({ isOpen }) => (
-  <div class={`modal ${ isOpen ? 'opacity-100' : 'pointer-events-none none opacity-0'}  fixed w-full h-full top-0 left-0 flex items-center justify-center z-30`}>
-    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
-    <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
-      <div class="modal-content bg-white py-4   text-left w-full mx-auto">
+const SurveyModel = ({ isOpen, onClose }) => (
+  <div className={`modal ${ isOpen ? 'opacity-100' : 'pointer-events-none none opacity-0'}  fixed w-full h-full top-0 left-0 flex items-center justify-center z-30`}>
+    <div className="modal-overlay absolute w-full h-full bg-gray-900 opacity-50 z-10" onClick={onClose}></div>
+    <div className="modal-container flex flex-col bg-white w-11/12 md:max-w-lg mx-auto rounded shadow-lg z-50 overflow-y-auto">
+      <div className="flex py-2 px-4 flex justify-end">
+        <button onClick={onClose} className="font-gt text-xs text-gray-400">Close</button>
+      </div>
+      <div class="modal-content bg-white  text-left w-full mx-auto">
         <div id="smcx-sdk" className="z-40" />    
       </div>
     </div>
@@ -37,13 +40,19 @@ class IndexPage extends Component {
       sur: true
     })
   }
+
+  onClose = () => {
+    this.setState({
+      sur: false
+    })
+  }
   
   render() {
     const props = this.props;
     return(
   <Layout>
     <SEO title="Leapcode Open" />
-    <SurveyModel isOpen={this.state.sur} />
+    <SurveyModel onClose={this.onClose} isOpen={this.state.sur} />
     <div className="w-screen min-h-screen flex justify-center items-center flex-col">
       <div className="logo md:w-1/2 lg:w-1/2 mb-10">
         <img className="md:w-1/4 lg:w-1/3 w-1/2 mx-auto" src={require('../images/leapcode--open--noslash.png')} />
