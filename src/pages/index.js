@@ -7,13 +7,13 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    {/* <SEO title="Home" /> */}
     <div className="w-screen min-h-screen flex justify-center items-center flex-col">
       <div className="logo md:w-1/2 lg:w-1/2 mb-10">
         <img className="md:w-1/4 lg:w-1/3 w-1/2 mx-auto" src={require('../images/leapcode--open--noslash.png')} />
       </div>
       <div className="md:w-1/2  center text-center px-2">
-        <h1 className="font-medium dark:text-white font-gt tracking-tighter text-gray-900 leading-10">A better way to get started with <br></br>open source contribution</h1>
+        <h1 className="font-medium dark:text-white font-gt font-bold tracking-tighter text-gray-900 leading-10">A better way to get started with <br></br>open source contribution</h1>
         <p className='dark:text-white font-medium font-gt'>We're building Leapcode Open to help you get things rolling with your first open source contribution</p>
         <p className='dark:text-white font-medium text-gray-800 font-gt mt-8 block'>Be the first to know!</p> 
         <a href="#" className=' inline-block px-4 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-sm' style= {{ backgroundColor:"#ed4857"}} >Count me in🙋‍♀️</a>  
