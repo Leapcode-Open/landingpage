@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO />
+    <SEO title="Leapcode Open" />
     <div className="w-screen min-h-screen flex justify-center items-center flex-col">
       <div className="logo md:w-1/2 lg:w-1/2 mb-10">
         <img className="md:w-1/4 lg:w-1/3 w-1/2 mx-auto" src={require('../images/leapcode--open--noslash.png')} />
