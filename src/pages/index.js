@@ -19,7 +19,7 @@ const IndexPage = () => (
         <a href="#" className=' inline-block px-4 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-sm' style= {{ backgroundColor:"#ed4857"}} >Count me in🙋‍♀️</a>  
       </div>
     </div>
-
+    {/* <script>(function(t,e,s,o){var n,c,l;t.SMCX=t.SMCX||[],e.getElementById(o)||(n=e.getElementsByTagName(s),c=n[n.length-1],l=e.createElement(s),l.type="text/javascript",l.async=!0,l.id=o,l.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd_2BcEYo8O3z9VnKhrJB6wgHJnsLHvfrE5KV95XWNat2rU.js"].join(""),c.parentNode.insertBefore(l,c))})(window,document,"script","smcx-sdk");</script> */}
     <section className=" bg-gray-100 py-4">
         <div className="md:w-1/2 px-4 mx-auto text-lg leading-8 py-4 my-4" >
           <p className="font-gt py-4 my-4">You have read a lot of blogs on the internet & went through different resources on contributing to open source. But, still stuck and haven't made any contributions yet.<br /><br />
