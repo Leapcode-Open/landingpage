@@ -12,7 +12,7 @@ const SurveyModel = ({ isOpen, onClose }) => (
     <div className="modal-overlay absolute w-full h-full bg-gray-900 opacity-50 z-10" onClick={onClose}></div>
     <div className="modal-container flex flex-col bg-white w-11/12 md:max-w-lg mx-auto rounded shadow-lg z-50 overflow-y-auto">
       <div className="flex py-2 px-4 flex justify-end">
-        <button onClick={onClose} className="font-gt text-xs text-gray-400">Close</button>
+        <button onClick={onClose} className="font-gt text-xs text-gray-350">Close</button>
       </div>
       <div class="modal-content bg-white  text-left w-full mx-auto">
         <div id="smcx-sdk" className="z-40" />    
@@ -61,7 +61,7 @@ class IndexPage extends Component {
         <h1 className="font-medium dark:text-white font-gt font-bold tracking-tighter text-gray-900 leading-10">A better way to get started with <br></br>open source contribution</h1>
         <p className='dark:text-white font-medium font-gt'>We're building Leapcode Open to help you get things rolling with your first open source contribution</p>
         <p className='dark:text-white font-medium text-gray-800 font-gt mt-8 block'>Be the first to know!</p> 
-        <a onClick={this.runSurvey} className=' inline-block px-4 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-sm' style= {{ backgroundColor:"#ed4857"}} >Count me in🙋‍♀️</a>  
+        <a onClick={this.runSurvey} className=' inline-block px-4 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-sm a-button' style= {{ backgroundColor:"#ed4857"}} >Count me in🙋‍♀️</a>  
       </div>
     </div>
     <section className=" bg-gray-100 py-4">
