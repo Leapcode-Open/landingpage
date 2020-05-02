@@ -13,7 +13,7 @@ const IndexPage = () => (
         <img className="md:w-1/4 lg:w-1/3 w-1/2 mx-auto" src={require('../images/leapcode-open.png')} />
       </div>
       <div className="md:w-1/2  center text-center px-2">
-        <h1 className="font-medium dark:text-white font-ex tracking-tighter text-gray-900 leading-10">A better way to get started with open source contribution</h1>
+        <h1 className="font-medium dark:text-white font-gt tracking-tighter text-gray-900 leading-10">A better way to get started with <br></br>open source contribution</h1>
         <p className='dark:text-white font-medium font-gt'>We're building Leapcode Open to help you get things rolling with your first open source contribution</p>
         <p className='dark:text-white font-medium text-gray-800 font-gt mt-8 block'>Be the first to know!</p> 
         <a href="#" className=' inline-block px-4 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-sm' style= {{ backgroundColor:"#ed4857"}} >Count me in🙋‍♀️</a>  
@@ -26,7 +26,7 @@ const IndexPage = () => (
 There are a lot of open-source projects out there, and it's quite tricky to find a perfect one that excites you. On top of that, sometimes you don't understand the code or get nervous about making changes to the code, thinking if it is right or not.    <br /><br />
     We all know this can be a little overwhelming when you are just starting. 
     <br /><br />
-But still, we can make it more comfortable and exciting for you to get started. With Leapcode's Open, we have done that. We are upgrading your experience as a first-time contributor and making it more engaging & straightforward.
+But still, we can make it more comfortable and exciting for you to get started. With Leapcode's Open, we are upgrading your experience as a first-time contributor and making it more engaging & straightforward.
     <br /><br />
     A fresh start, the way it should be.
     </p>
