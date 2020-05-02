@@ -23,8 +23,7 @@ const IndexPage = () => (
     <section className=" bg-gray-100 py-4">
         <div className="md:w-1/2 px-4 mx-auto text-lg leading-8 py-4 my-4" >
           <p className="font-gt py-4 my-4">You have read a lot of blogs on the internet & went through different resources on contributing to open source. But, still stuck and haven't made any contributions yet.<br /><br />
-    Sometimes you don't understand the code or nervous of making changes to the code, thinking if this is right or not. On top of that, there are a lot of open-source projects out there and finding a project that excites you is also a problem.
-    <br /><br />
+There are a lot of open-source projects out there, and it's quite tricky to find a perfect one that excites you. On top of that, sometimes you don't understand the code or get nervous about making changes to the code, thinking if it is right or not.    <br /><br />
     We all know this can be a little overwhelming when you are just starting. 
     <br /><br />
 But still, we can make it more comfortable and exciting for you to get started. With Leapcode's Open, we have done that. We are upgrading your experience as a first-time contributor and making it more engaging & straightforward.
