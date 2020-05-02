@@ -1,0 +1,15 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+.font-ex {
+    font-family: 'AFont-Ex', sans-serif;
+}
+
+.font-gt { 
+    font-family: 'AFont', sans-serif;
+}

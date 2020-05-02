@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "AFont";
+    font-weight: 700;
+    src: url("GT-America-Bold.otf");
+}
+
+@font-face {
+    font-family: "AFont-Ex";
+    font-size:500;
+    src: url("GT-America-Extended-Medium.otf");
+}
+
+@font-face {
+    font-family: "AFont-Ex";
+    font-size:300;
+    src: url("GT-America-Extended-Regular.otf");
+}
+
+@font-face {
+    font-family: "AFont-Ex";
+    src: url("GT-America-Extended-Medium.otf");
+}
+
+@font-face {
+    font-family: "AFont";
+    font-weight: 500;
+    src: url("GT-America-Medium.otf");
+}
+
+
+@font-face {
+    font-family: "AFont";
+    font-weight: 300;
+    src: url("GT-America-Regular.otf");
+}
