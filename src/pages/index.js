@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo";
 
+import { ReactTypeformEmbed } from 'react-typeform-embed';
 
 
 const SurveyModel = ({ isOpen, onClose }) => (
@@ -15,7 +16,8 @@ const SurveyModel = ({ isOpen, onClose }) => (
         <button onClick={onClose} className="font-gt text-xs text-gray-400">Close</button>
       </div>
       <div class="modal-content bg-white  text-left w-full mx-auto">
-        <div id="smcx-sdk" className="z-40" />    
+        {/* <div id="smcx-sdk" className="z-40" />     */}
+        <ReactTypeformEmbed hideFooter style={{ height:'500px', width:'100%', position:'relative' }} url="https://leapcode.typeform.com/to/GVCzFy" />
       </div>
     </div>
    
