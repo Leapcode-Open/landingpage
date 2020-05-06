@@ -624,3 +624,117 @@ pre tt:after {
 .a-button:hover {
   cursor:pointer;
  }
+
+
+ @keyframes scale-down {
+  0% {
+      opacity: 0.2;
+      transform: scale(1.06);
+      filter: blur(2px);
+
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+      filter: blur(0px);
+
+  }
+}
+
+
+@keyframes scale-down-in {
+  0% {
+      opacity: 0.2;
+      transform: scale(1.1);
+      filter: blur(2px);
+      visibility: visible;
+    }
+
+  40% {
+    opacity: 1;
+    transform: scale(1.03);
+    filter: blur(0px);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+
+  99% {
+    visibility: visible;
+  }
+
+  100% {
+      opacity: 0;
+      transform: scale(0.8);
+      filter: blur(0px);
+      visibility: hidden;
+
+  }
+}
+
+
+@keyframes visiblity-down {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  80% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  99% {
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+@keyframes scale-down {
+  0% {
+      opacity: 0.2;
+      transform: scale(1.06);
+      filter: blur(2px);
+
+  }
+
+  100% {
+      opacity: 0;
+      transform: scale(0.8);
+      filter: blur(0px);
+
+  }
+}
+
+
+.ani-intro {
+  animation: 0.4s ease 0s 1 normal none running scale-down;
+}
+
+
+.ani-intro--full {
+  position: absolute;
+  top:0;
+  left: 0;
+  animation: 4s ease 0s 1 normal none running visiblity-down;
+  visibility: hidden;
+  background: white;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.ani-intro--full--wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  animation: 3s ease 1s 1 normal none running scale-down-in;
+}
