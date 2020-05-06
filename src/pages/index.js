@@ -71,7 +71,6 @@ class IndexPage extends Component {
   }
 
   runSurvey = () => {
-    console.log('ssd')
     this.setState({
       sur: true
     })
@@ -96,7 +95,7 @@ class IndexPage extends Component {
       <div className="md:w-1/2  center text-center md:text-left px-2">
         <h1 className="font-medium dark:text-white font-gt font-bold tracking-tight text-gray-900 leading-16 lg:text-4xl">A better way to get started with open source contribution</h1>
         <p className='dark:text-white font-medium font-gt'>We're building Leapcode Open to help you get things rolling with your first open source contribution</p>
-        <p className='dark:text-white font-medium text-gray-800 font-gt mt-10 block font-bold'>Be the first to know!</p> 
+        <p className='dark:text-white font-medium text-gray-800 font-gt mt-10 block font-bold'>Want to hop on 🚌 as we build?</p> 
         <a onClick={this.runSurvey} className=' inline-block font-bold px-4 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-sm a-button' style= {{ backgroundColor:"#ed4857"}} >Count me in 🙋‍♀️</a>  
       </div>
     </div>
