@@ -67,7 +67,7 @@ class IndexPage extends Component {
   }
 
   state = {
-    sur: false
+    sur: false,
   }
 
   runSurvey = () => {
