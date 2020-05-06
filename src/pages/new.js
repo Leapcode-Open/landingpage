@@ -34,7 +34,7 @@ const InfoBlock = (props) => (
               <img className="w-1/2 lg:w-full md:-ml-20"  src={props.src} />
             </div>
             <div className="flex justify-center flex-col">
-              <h3 className="font-gt text-gray-800 font-medium">{props.title}</h3>
+              <h3 className="font-gt text-gray-800 font-bold">{props.title}</h3>
               <p className="font-gt text-sm font-regular">{props.para}</p>
             </div>
           </div>
@@ -94,10 +94,10 @@ class IndexPage extends Component {
         <img className="md:w-1/4 lg:w-1/3 w-1/2 mx-auto" src={require('../images/leapcode--open--noslash.png')} />
       </div>
       <div className="md:w-1/2  center text-center px-2">
-        <h1 className="font-medium dark:text-white font-gt font-bold tracking-tighter text-gray-900 leading-10">A better way to get started with <br></br>open source contribution</h1>
+        <h1 className="font-medium dark:text-white font-gt font-bold tracking-tighter text-gray-900 leading-16">A better way to get started with <br></br>open source contribution</h1>
         <p className='dark:text-white font-medium font-gt'>We're building Leapcode Open to help you get things rolling with your first open source contribution</p>
-        <p className='dark:text-white font-medium text-gray-800 font-gt mt-8 block'>Be the first to know!</p> 
-        <a onClick={this.runSurvey} className=' inline-block px-4 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-sm a-button' style= {{ backgroundColor:"#ed4857"}} >Count me in🙋‍♀️</a>  
+        <p className='dark:text-white font-medium text-gray-800 font-gt mt-10 block font-bold'>Be the first to know!</p> 
+        <a onClick={this.runSurvey} className=' inline-block font-bold px-4 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-sm a-button' style= {{ backgroundColor:"#ed4857"}} >Count me in 🙋‍♀️</a>  
       </div>
     </div>
     <section className=" py-4">
@@ -112,8 +112,8 @@ class IndexPage extends Component {
 
       <div className={` py-12 bg-gray-100`}>
           <div className="mx-auto md:w-1/2 text-center py-12">
-            <h3 className='dark:text-white font-medium text-gray-800 font-gt block mb-12'>Want to get early access and product updates?</h3> 
-            <a onClick={this.runSurvey} className=' inline-block px-4 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-sm a-button' style= {{ backgroundColor:"#ed4857"}} >Count me in🙋‍♀️</a>  
+            <h3 className='dark:text-white font-medium text-gray-800 font-gt block mb-12 font-bold'>Want to get early access and product updates?</h3> 
+            <a onClick={this.runSurvey} className=' inline-block font-bold px-4 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-sm a-button' style= {{ backgroundColor:"#ed4857"}} >Count me in 🙋‍♀️</a>  
           </div>
         </div>
 
