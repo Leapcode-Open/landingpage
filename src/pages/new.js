@@ -29,12 +29,12 @@ const blockData = [{
 
 const InfoBlock = (props) => (
         <div className={` py-8 ${props.id % 2 == 0 ? 'bg-gray-100' : ''}`}>
-          <div className="mx-auto md:w-1/2  grid md:grid-cols-2 sm:grid-cols-none px-2" >
+          <div className="mx-auto md:w-2/3  grid md:grid-cols-2 sm:grid-cols-none px-2" >
             <div className="xs:flex xs:items-center">
               <img className="w-1/2 lg:w-full md:-ml-20"  src={props.src} />
             </div>
             <div className="flex justify-center flex-col">
-              <h3 className="font-gt text-gray-800 font-bold">{props.title}</h3>
+              <h3 className="font-gt text-gray-800 font-bold lg:text-4xl">{props.title}</h3>
               <p className="font-gt text-sm font-regular">{props.para}</p>
             </div>
           </div>
@@ -89,12 +89,12 @@ class IndexPage extends Component {
   <Layout>
     <SEO title="Leapcode Open" />
     <SurveyModel onClose={this.onClose} isOpen={this.state.sur} />
-    <div className="w-screen min-h-screen flex justify-center items-center flex-col">
-      <div className="logo md:w-1/2 lg:w-1/2 mb-10">
-        <img className="md:w-1/4 lg:w-1/3 w-1/2 mx-auto" src={require('../images/leapcode--open--noslash.png')} />
+    <div className="md:w-11/12 lg:w-2/3  mx-auto min-h-screen flex justify-center items-center flex-col md:flex-row">
+      <div className="logo md:w-1/3 lg:w-1/3 mb-10">
+        <img className="md:w-2/3 w-1/2 mx-auto md:mx-1" src={require('../images/leapcode--open--noslash.png')} />
       </div>
-      <div className="md:w-1/2  center text-center px-2">
-        <h1 className="font-medium dark:text-white font-gt font-bold tracking-tighter text-gray-900 leading-16">A better way to get started with <br></br>open source contribution</h1>
+      <div className="md:w-1/2  center text-center md:text-left px-2">
+        <h1 className="font-medium dark:text-white font-gt font-bold tracking-tight text-gray-900 leading-16 lg:text-4xl">A better way to get started with open source contribution</h1>
         <p className='dark:text-white font-medium font-gt'>We're building Leapcode Open to help you get things rolling with your first open source contribution</p>
         <p className='dark:text-white font-medium text-gray-800 font-gt mt-10 block font-bold'>Be the first to know!</p> 
         <a onClick={this.runSurvey} className=' inline-block font-bold px-4 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-sm a-button' style= {{ backgroundColor:"#ed4857"}} >Count me in 🙋‍♀️</a>  

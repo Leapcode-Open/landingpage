@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-        <main>{children}</main>
+        <main style={{ backgroundImage: `url('/home.bnad.png')`, backgroundSize:'100% auto', backgroundPosition:'50% 0', backgroundRepeat:'repeat-y' }}>{children}</main>
         <footer>
         
         </footer>
