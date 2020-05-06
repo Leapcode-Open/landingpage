@@ -3,6 +3,9 @@ module.exports = {
     title: `Leapcode Open`,
     description: `Make your first Open source contribution`,
     author: `@isethu`,
+    image:'/splash.png',
+    url: "https://open.leapcode.io",
+    twitterUsername:'@leapcodeio'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
