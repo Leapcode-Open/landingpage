@@ -6,6 +6,7 @@ import Image from "../components/image"
 import SEO from "../components/seo";
 
 import { ReactTypeformEmbed } from 'react-typeform-embed';
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
 
 
@@ -77,6 +78,19 @@ class IndexPage extends Component {
   }
 
   runSurvey = () => {
+
+    trackCustomEvent({
+      // string - required - The object that was interacted with (e.g.video)
+      category: "Form Filling",
+      // string - required - Type of interaction (e.g. 'play')
+      action: "Click",
+      // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
+      label: "Beta Form",
+      // number - optional - Numeric value associated with the event. (e.g. A product ID)
+      value: 1
+    })
+
+
     this.setState({
       sur: true
     })
