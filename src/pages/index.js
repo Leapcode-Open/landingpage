@@ -108,11 +108,11 @@ class IndexPage extends Component {
   <Layout>
     <SEO title="Leapcode Open" />
     <SurveyModel onClose={this.onClose} isOpen={this.state.sur} />
-    <div className="ani-intro--full flex">
+    {/* <div className="ani-intro--full flex">
       <div className='ani-intro--full--wrapper  items-center justify-center'>
         <img className="md:w-1/5 w-1/2 mx-auto md:mx-1" src={require('../images/leapcode--open--noslash.png')} />
       </div>
-    </div>
+    </div> */}
     <div className="md:w-11/12 lg:w-2/3  mx-auto min-h-screen flex justify-center items-center flex-col md:flex-row">
       <div className="logo md:w-1/3 lg:w-1/3 mb-10">
         <img className="md:w-2/3 w-1/2 mx-auto md:mx-1" src={require('../images/leapcode--open--noslash.png')} />
