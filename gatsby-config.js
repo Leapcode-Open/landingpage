@@ -3,7 +3,7 @@ module.exports = {
     title: `Leapcode Open`,
     description: `Make your first Open Source contribution`,
     author: `@isethu`,
-    image:'/splash.png',
+    image:'https://open.leapcode.io/splash.png',
     url: "https://open.leapcode.io",
     twitterUsername:'@leapcodeio'
   },
