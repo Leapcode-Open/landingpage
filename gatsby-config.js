@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Leapcode Open`,
-    description: `Make your first Open source contribution`,
+    description: `Make your first Open Source contribution`,
     author: `@isethu`,
     image:'/splash.png',
     url: "https://open.leapcode.io",
