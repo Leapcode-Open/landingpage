@@ -1,18 +1,31 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.name}</h1>
-        <h2>{frontmatter.username}</h2>
-        <p>{frontmatter.bio}</p>
-      </div>
-    </div>
+      <Layout>
+          <SEO title={`${frontmatter.name} is a contributor` } />
+        <div className="w-screen h-screen bg-blue-100 pt-32">
+            <div className="w-1/4 mx-auto my-auto text-left p-10 bg-white">
+                <div className="blog-post font-gt">
+                    <small class="font-bold text-gray-600">Your name</small>
+                    <h3 className="font-medium">{frontmatter.name}</h3>
+
+                    <small class="font-bold text-gray-600">Username</small>
+                    <h3 className="font-medium">{frontmatter.username}</h3>
+
+                    <small class="font-bold text-gray-600">Bio </small>
+                    <h3 className="font-medium">{frontmatter.bio}</h3>
+                </div>
+            </div>
+        </div>
+      </Layout>
+    
   )
 }
 export const pageQuery = graphql`
