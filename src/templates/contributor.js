@@ -13,13 +13,13 @@ export default function Template({
         <div className="w-screen h-screen bg-blue-100 pt-32">
             <div className="w-1/4 mx-auto my-auto text-left p-10 bg-white">
                 <div className="blog-post font-gt">
-                    <small class="font-bold text-gray-600">Your name</small>
+                    <small class="font-bold text-gray-600">I'm</small>
                     <h3 className="font-medium">{frontmatter.name}</h3>
 
-                    <small class="font-bold text-gray-600">Username</small>
+                    <small class="font-bold text-gray-600">My Github Profile is</small>
                     <h3 className="font-medium">{frontmatter.username}</h3>
 
-                    <small class="font-bold text-gray-600">Bio </small>
+                    <small class="font-bold text-gray-600">and</small>
                     <h3 className="font-medium">{frontmatter.bio}</h3>
                 </div>
             </div>
