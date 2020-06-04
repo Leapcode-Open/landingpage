@@ -123,7 +123,7 @@ class IndexPage extends Component {
         <h1 className="font-medium dark:text-white font-gt font-bold tracking-tight text-gray-900 leading-16 lg:text-5xl">Kick start your open source contribution</h1>
         <p className='dark:text-white font-medium font-gt lg:text-2xl leading-8'>Leapcode helps you contribute to open source projects right from your first pull request to working on major projects</p>
         <p className='dark:text-white font-medium text-gray-800 font-gt mt-10 block font-bold'>Want to hop on 🚌 as we build?</p> 
-        <a onClick={this.runSurvey} className=' inline-block font-bold px-8 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-base a-button' style= {{ backgroundColor:"#ed4857"}} >Count me in 🙋‍♀️</a>  
+        <a onClick={this.runSurvey} className=' inline-block font-bold px-8 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-base a-button' style= {{ backgroundColor:"#ed4857"}} >Count me in 👋</a>  
       </div>
     </div>
     <section className=" py-4">
