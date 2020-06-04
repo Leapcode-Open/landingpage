@@ -12,12 +12,12 @@ const tweets = [
   {
     id:0,
     username: 'archanaserver',
-    html: `<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">The platform is so cool for all who is going to join <a href="https://twitter.com/hashtag/LeapcodeOpen?src=hash&amp;ref_src=twsrc%5Etfw">#LeapcodeOpen</a>, the best part of this platform is everyone contributor will get scores after each pull requests. 🤩<br><br>Thank you <a href="https://twitter.com/isethu?ref_src=twsrc%5Etfw">@isethu</a> and the <a href="https://twitter.com/leapcodeio?ref_src=twsrc%5Etfw">@leapcodeio</a> team for building this platform. This is going to be huge soon.🔥</p>&mdash; Archana🦉 (@archanaserver) <a href="https://twitter.com/archanaserver/status/1268254820080615424?ref_src=twsrc%5Etfw">June 3, 2020</a></blockquote>`
+    html: `<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The platform is so cool for all who is going to join <a href="https://twitter.com/hashtag/LeapcodeOpen?src=hash&amp;ref_src=twsrc%5Etfw">#LeapcodeOpen</a>, the best part of this platform is everyone contributor will get scores after each pull requests. 🤩<br><br>Thank you <a href="https://twitter.com/isethu?ref_src=twsrc%5Etfw">@isethu</a> and the <a href="https://twitter.com/leapcodeio?ref_src=twsrc%5Etfw">@leapcodeio</a> team for building this platform. This is going to be huge soon.🔥</p>&mdash; Archana🦉 (@archanaserver) <a href="https://twitter.com/archanaserver/status/1268254820080615424?ref_src=twsrc%5Etfw">June 3, 2020</a></blockquote>`
   },
   {
     id:1,
     username:'hiralthaker12',
-    html:`<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">The platform is so easy and insightful to understand, play around and make your first open source contribution.<br><br>Waiting for them to go public with their project.<a href="https://twitter.com/hashtag/opensource?src=hash&amp;ref_src=twsrc%5Etfw">#opensource</a> <a href="https://twitter.com/hashtag/opensourceprojects?src=hash&amp;ref_src=twsrc%5Etfw">#opensourceprojects</a> <a href="https://twitter.com/hashtag/WomenInTech?src=hash&amp;ref_src=twsrc%5Etfw">#WomenInTech</a></p>&mdash; Thaker Hiral #WomenInTech #IWD20 #TogetherWeRise (@hiralthaker12) <a href="https://twitter.com/hiralthaker12/status/1267501834010312704?ref_src=twsrc%5Etfw">June 1, 2020</a></blockquote>`
+    html:`<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The platform is so easy and insightful to understand, play around and make your first open source contribution.<br><br>Waiting for them to go public with their project.<a href="https://twitter.com/hashtag/opensource?src=hash&amp;ref_src=twsrc%5Etfw">#opensource</a> <a href="https://twitter.com/hashtag/opensourceprojects?src=hash&amp;ref_src=twsrc%5Etfw">#opensourceprojects</a> <a href="https://twitter.com/hashtag/WomenInTech?src=hash&amp;ref_src=twsrc%5Etfw">#WomenInTech</a></p>&mdash; Thaker Hiral #WomenInTech #IWD20 #TogetherWeRise (@hiralthaker12) <a href="https://twitter.com/hiralthaker12/status/1267501834010312704?ref_src=twsrc%5Etfw">June 1, 2020</a></blockquote>`
 
   }
 ]
@@ -120,6 +120,9 @@ class IndexPage extends Component {
   <Layout>
     <SEO title="Leapcode Open" />
     <SurveyModel onClose={this.onClose} isOpen={this.state.sur} />
+
+      <div className="py-3 w-screen text-center text-sm font-gt bg-black text-white">We have moved our women in tech platform to a <a className='font-bold hover:underline' href="https://women.leapcode.io">new home</a></div>
+
     {/* <div className="ani-intro--full flex">
       <div className='ani-intro--full--wrapper  items-center justify-center'>
         <img className="md:w-1/5 w-1/2 mx-auto md:mx-1" src={require('../images/leapcode--open--noslash.png')} />
@@ -146,7 +149,7 @@ class IndexPage extends Component {
         <a href={"https://twitter.com/hashtag/LeapcodeOpen?src=hash&amp;ref_src=twsrc%5Etfw"}>#LeapcodeOpen</a>, the best part of this platform is everyone contributor will get scores after each pull requests. 🤩<br /><br />Thank you <a href="https://twitter.com/isethu?ref_src=twsrc%5Etfw">@isethu</a> and the <a href="https://twitter.com/leapcodeio?ref_src=twsrc%5Etfw">@leapcodeio</a> team for building this platform. This is going to be huge soon.🔥</p>&mdash; Archana🦉 (@archanaserver) <a href="https://twitter.com/archanaserver/status/1268254820080615424?ref_src=twsrc%5Etfw">June 3, 2020</a></blockquote>
  */}
 
-      <div className="my-16 px-4 md:px-0 max-w-screen-sm md:max-w-4xl mx-auto flex flex-col md:grid md:grid-cols-2 md:gap-16">
+      <div className="mt-16 px-4 md:px-0 max-w-screen-sm md:max-w-4xl mx-auto flex flex-col md:grid md:grid-cols-2 md:gap-16">
         { tweets.map(tweet => <div key={tweet.id} className="">
             <div className="" dangerouslySetInnerHTML={{ __html: tweet.html }} />
         </div>) }
@@ -155,6 +158,9 @@ class IndexPage extends Component {
     <div className=''>
         { blockData.map(block => <InfoBlock {...block} />) }
     </div>
+
+
+    {/* <div className="bg-black text-white"></div> */}
 
 
 
@@ -185,8 +191,9 @@ But still, we can make it more comfortable and exciting for you to get started. 
 
 
 
-    <div className="font-gt md:w-1/2 px-4 mx-auto mt-4 py-4 text-gray-500">
-      From the <a href="https://leapcode.io">Leapcode</a> team
+    <div className="font-gt flex justify-between md:w-1/2 px-4 mx-auto mt-4 py-4 text-gray-500">
+      <span><a className="hover:underline" href="https://women.leapcode.io">Women in tech community</a></span>
+      <span>From the <a href="https://leapcode.io">Leapcode</a> team</span>
     </div>
 
  
