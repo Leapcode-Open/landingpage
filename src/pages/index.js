@@ -125,12 +125,12 @@ class IndexPage extends Component {
         <img className="md:w-1/5 w-1/2 mx-auto md:mx-1" src={require('../images/leapcode--open--noslash.png')} />
       </div>
     </div> */}
-    <div className="md:w-11/12 lg:w-2/3  mx-auto md:pt-32 md:pb-12 flex justify-center items-center flex-col md:flex-row">
+    <div className="md:w-11/12 lg:w-2/3  mx-auto pt-20 md:pt-32 md:pb-12 flex justify-center items-center flex-col md:flex-row">
       {/* <div className="logo md:w-1/3 lg:w-1/3 mb-10">
         <img className="md:w-2/3 w-1/2 mx-auto md:mx-1" src={require('../images/leapcode--open--noslash.png')} />
       </div> */}
       <div className="md:w-2/3  center text-center px-2">
-        <img className="md:w-1/4 w-1/2 mx-auto mb-12" src="https://women.leapcode.io/static/logo-v3.png" />
+        <img className="md:w-1/4 w-1/3 mx-auto mb-12" src="https://women.leapcode.io/static/logo-v3.png" />
 
         <h1 className="font-medium dark:text-white font-gt font-bold tracking-tight text-gray-900 leading-16 lg:text-5xl">Kick start your open source contribution</h1>
         <p className='dark:text-white font-medium font-gt lg:text-2xl leading-8'>Leapcode helps you contribute to open source projects right from your first pull request to working on major projects</p>
@@ -146,8 +146,8 @@ class IndexPage extends Component {
         <a href={"https://twitter.com/hashtag/LeapcodeOpen?src=hash&amp;ref_src=twsrc%5Etfw"}>#LeapcodeOpen</a>, the best part of this platform is everyone contributor will get scores after each pull requests. 🤩<br /><br />Thank you <a href="https://twitter.com/isethu?ref_src=twsrc%5Etfw">@isethu</a> and the <a href="https://twitter.com/leapcodeio?ref_src=twsrc%5Etfw">@leapcodeio</a> team for building this platform. This is going to be huge soon.🔥</p>&mdash; Archana🦉 (@archanaserver) <a href="https://twitter.com/archanaserver/status/1268254820080615424?ref_src=twsrc%5Etfw">June 3, 2020</a></blockquote>
  */}
 
-      <div className="my-16 max-w-4xl mx-auto grid grid-flow-row grid-cols-2 gap-16">
-        { tweets.map(tweet => <div key={tweet.id} className="flex">
+      <div className="my-16 px-4 md:px-0 max-w-screen-sm md:max-w-4xl mx-auto flex flex-col md:grid md:grid-cols-2 md:gap-16">
+        { tweets.map(tweet => <div key={tweet.id} className="">
             <div className="" dangerouslySetInnerHTML={{ __html: tweet.html }} />
         </div>) }
       </div>
