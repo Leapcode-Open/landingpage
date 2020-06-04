@@ -8,7 +8,19 @@ import SEO from "../components/seo";
 import { ReactTypeformEmbed } from 'react-typeform-embed';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
+const tweets = [
+  {
+    id:0,
+    username: 'archanaserver',
+    html: `<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">The platform is so cool for all who is going to join <a href="https://twitter.com/hashtag/LeapcodeOpen?src=hash&amp;ref_src=twsrc%5Etfw">#LeapcodeOpen</a>, the best part of this platform is everyone contributor will get scores after each pull requests. 🤩<br><br>Thank you <a href="https://twitter.com/isethu?ref_src=twsrc%5Etfw">@isethu</a> and the <a href="https://twitter.com/leapcodeio?ref_src=twsrc%5Etfw">@leapcodeio</a> team for building this platform. This is going to be huge soon.🔥</p>&mdash; Archana🦉 (@archanaserver) <a href="https://twitter.com/archanaserver/status/1268254820080615424?ref_src=twsrc%5Etfw">June 3, 2020</a></blockquote>`
+  },
+  {
+    id:1,
+    username:'hiralthaker12',
+    html:`<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">The platform is so easy and insightful to understand, play around and make your first open source contribution.<br><br>Waiting for them to go public with their project.<a href="https://twitter.com/hashtag/opensource?src=hash&amp;ref_src=twsrc%5Etfw">#opensource</a> <a href="https://twitter.com/hashtag/opensourceprojects?src=hash&amp;ref_src=twsrc%5Etfw">#opensourceprojects</a> <a href="https://twitter.com/hashtag/WomenInTech?src=hash&amp;ref_src=twsrc%5Etfw">#WomenInTech</a></p>&mdash; Thaker Hiral #WomenInTech #IWD20 #TogetherWeRise (@hiralthaker12) <a href="https://twitter.com/hiralthaker12/status/1267501834010312704?ref_src=twsrc%5Etfw">June 1, 2020</a></blockquote>`
 
+  }
+]
 
 
 const blockData = [{
@@ -113,7 +125,7 @@ class IndexPage extends Component {
         <img className="md:w-1/5 w-1/2 mx-auto md:mx-1" src={require('../images/leapcode--open--noslash.png')} />
       </div>
     </div> */}
-    <div className="md:w-11/12 lg:w-2/3  mx-auto min-h-screen flex justify-center items-center flex-col md:flex-row">
+    <div className="md:w-11/12 lg:w-2/3  mx-auto md:pt-32 md:pb-12 flex justify-center items-center flex-col md:flex-row">
       {/* <div className="logo md:w-1/3 lg:w-1/3 mb-10">
         <img className="md:w-2/3 w-1/2 mx-auto md:mx-1" src={require('../images/leapcode--open--noslash.png')} />
       </div> */}
@@ -129,10 +141,20 @@ class IndexPage extends Component {
     <section className=" py-4">
 
 
+    {/* <blockquote className="twitter-tweet" data-conversation="none" data-dnt="true" data-theme="light">
+      <p lang="en" dir="ltr">The platform is so cool for all who is going to join 
+        <a href={"https://twitter.com/hashtag/LeapcodeOpen?src=hash&amp;ref_src=twsrc%5Etfw"}>#LeapcodeOpen</a>, the best part of this platform is everyone contributor will get scores after each pull requests. 🤩<br /><br />Thank you <a href="https://twitter.com/isethu?ref_src=twsrc%5Etfw">@isethu</a> and the <a href="https://twitter.com/leapcodeio?ref_src=twsrc%5Etfw">@leapcodeio</a> team for building this platform. This is going to be huge soon.🔥</p>&mdash; Archana🦉 (@archanaserver) <a href="https://twitter.com/archanaserver/status/1268254820080615424?ref_src=twsrc%5Etfw">June 3, 2020</a></blockquote>
+ */}
+
+      <div className="my-16 max-w-4xl mx-auto grid grid-flow-row grid-cols-2 gap-16">
+        { tweets.map(tweet => <div key={tweet.id} className="flex">
+            <div className="" dangerouslySetInnerHTML={{ __html: tweet.html }} />
+        </div>) }
+      </div>
 
     <div className=''>
         { blockData.map(block => <InfoBlock {...block} />) }
-      </div>
+    </div>
 
 
 

@@ -5,7 +5,7 @@
  */
 
 // You can delete this file if you're not using it
-
+import React, { Component } from 'react' 
 export const onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
     const headComponents = getHeadComponents();
     headComponents.sort((a, b) => {
@@ -18,3 +18,4 @@ export const onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) =>
     });
     replaceHeadComponents(headComponents);
   };
+

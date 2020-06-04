@@ -20,6 +20,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-scroll-reveal`,
+    `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
