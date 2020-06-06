@@ -66,7 +66,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `twitter:image`,
-          content: 'https://open.leapcode.io/splash.png',
+          content: 'https://leapcode.io/splash.png',
         },
         {
           name: `twitter:title`,
