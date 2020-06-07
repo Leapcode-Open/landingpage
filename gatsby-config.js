@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Leapcode Open`,
+    title: `Leapcode`,
     description: `Make your first Open Source contribution`,
     author: `@isethu`,
     image:'https://open.leapcode.io/splash.png',
@@ -21,6 +21,7 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-twitter`,
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {

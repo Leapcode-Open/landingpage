@@ -118,7 +118,7 @@ class IndexPage extends Component {
     const props = this.props;
     return(
   <Layout>
-    <SEO title="Leapcode Open" />
+    <SEO title="Leapcode" />
     <SurveyModel onClose={this.onClose} isOpen={this.state.sur} />
 
       <div className="py-3 w-screen text-center text-sm font-gt bg-black text-white">We have moved our women in tech platform to a <a className='font-bold hover:underline' href="https://women.leapcode.io">new home</a></div>
