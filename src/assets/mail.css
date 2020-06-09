@@ -245,10 +245,10 @@ section .check__item:before {
     height: 14px;
     width: 14px;
     border-radius: 3px;
-    top: 6px;
+    top: 9px;
     left: 0;
     position: absolute;
-    background-color: #CDF2FC;
+    background-color: #0d46c8;
     box-shadow: 3px 3px 0 0 rgba(2,43,105,0.7)
 }
 
