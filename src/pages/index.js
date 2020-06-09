@@ -19,6 +19,10 @@ const tweets = [
     username:'hiralthaker12',
     html:`<blockquote class="twitter-tweet" data-conversation="none" data-theme="dark"><p lang="en" dir="ltr">The platform is so easy and insightful to understand, play around and make your first open source contribution.<br><br>Waiting for them to go public with their project.<a href="https://twitter.com/hashtag/opensource?src=hash&amp;ref_src=twsrc%5Etfw">#opensource</a> <a href="https://twitter.com/hashtag/opensourceprojects?src=hash&amp;ref_src=twsrc%5Etfw">#opensourceprojects</a> <a href="https://twitter.com/hashtag/WomenInTech?src=hash&amp;ref_src=twsrc%5Etfw">#WomenInTech</a></p>&mdash; Thaker Hiral #WomenInTech #IWD20 #TogetherWeRise (@hiralthaker12) <a href="https://twitter.com/hiralthaker12/status/1267501834010312704?ref_src=twsrc%5Etfw">June 1, 2020</a></blockquote>`
 
+  }, {
+    id:3,
+    username:'PrateekG_',
+    html:`<blockquote class="twitter-tweet" data-conversation="none" data-theme="dark"><p lang="en" dir="ltr"><a href="https://twitter.com/leapcodeio?ref_src=twsrc%5Etfw">@leapcodeio</a> guides you each step, from finding a project to raising your first PR. The whole process of working on an open source project is gamified such that it keeps you engaged. Overall, you can be a open source contributor in just a few clicks😁</p>&mdash; Prateek Gupta (@PrateekG_) <a href="https://twitter.com/PrateekG_/status/1270385738815664128?ref_src=twsrc%5Etfw">June 9, 2020</a></blockquote>`
   }
 ]
 
@@ -59,6 +63,9 @@ const blockData = [{
   src:'/drawkit-list-app-monochrome.svg',
   para:'Open source communities are diverse, and talking to strangers could be a daunting task, to begin with. Getting connected with a mentor in the community who could guide is going to be really helpful.'
 }]
+
+
+
 
 const InfoBlock = (props) => (
         <div className={` py-8 ${props.id % 2 == 0 ? 'bg-gray-100' : ''}`}>
@@ -169,9 +176,9 @@ class IndexPage1 extends Component {
         <a href={"https://twitter.com/hashtag/LeapcodeOpen?src=hash&amp;ref_src=twsrc%5Etfw"}>#LeapcodeOpen</a>, the best part of this platform is everyone contributor will get scores after each pull requests. 🤩<br /><br />Thank you <a href="https://twitter.com/isethu?ref_src=twsrc%5Etfw">@isethu</a> and the <a href="https://twitter.com/leapcodeio?ref_src=twsrc%5Etfw">@leapcodeio</a> team for building this platform. This is going to be huge soon.🔥</p>&mdash; Archana🦉 (@archanaserver) <a href="https://twitter.com/archanaserver/status/1268254820080615424?ref_src=twsrc%5Etfw">June 3, 2020</a></blockquote>
  */}
 
-      <div className="mt-16 px-4 md:px-0 max-w-screen-sm md:max-w-4xl mx-auto flex flex-col md:grid md:grid-cols-2 md:gap-16">
+      <div className="mt-16 px-4 md:px-0 max-w-screen-sm md:max-w-4xl mx-auto flex flex-row flex-wrap items-center">
         { tweets.map(tweet => <div key={tweet.id} className="">
-            <div className="" dangerouslySetInnerHTML={{ __html: tweet.html }} />
+            <div className="w-1/2" dangerouslySetInnerHTML={{ __html: tweet.html }} />
         </div>) }
       </div>
 
@@ -313,8 +320,8 @@ class IndexPage extends Component {
         <div className="mt-24 text-center">
                 <h2 className="font-gt md:text-5xl text-newblue-900">Don’t take our word for it</h2>
                 <p className="font-gt text-newblue-900 tracking-wide">Our users are already talking about it on twitter</p>
-          <div className="mt-12 md:mt-24 px-4 md:px-0 max-w-screen-sm md:max-w-screen-lg mx-auto flex flex-col md:grid md:grid-cols-2 md:gap-16"> 
-            { tweets.map(tweet => <div key={tweet.id} className="">
+          <div className="mt-12 md:mt-24 px-4 md:px-0 max-w-screen-sm md:max-w-screen-lg mx-auto flex flex-row flex-wrap justify-center"> 
+            { tweets.map(tweet => <div key={tweet.id} className="w-full md:w-1/2 px-4 mb-8">
                 <div className="" dangerouslySetInnerHTML={{ __html: tweet.html }} />
             </div>) }
           </div>
