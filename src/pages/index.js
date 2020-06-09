@@ -356,7 +356,7 @@ class IndexPage extends Component {
               </div>
 
 
-              <button className=" mt-8 bg-gray-300 hover:bg-gray-400 text-newblue-900 font-semibold font-gt px-6 py-3 rounded">Add your Repo</button>
+              <a href="https://airtable.com/shrGWFt2xQsfAHMu4" className=" mt-8 bg-gray-300 hover:bg-gray-400 text-newblue-900 font-semibold font-gt px-6 py-3 rounded">Add your Repository</a>
 
             </div>
             
