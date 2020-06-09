@@ -127,7 +127,7 @@ module.exports = {
       },
       newblue: {
         100: '#F4F8FC',
-        200: '#bee3f8',
+        200: '#CDF2FC',
         300: '#90cdf4',
         400: '#63b3ed',
         500: '#4299e1',
