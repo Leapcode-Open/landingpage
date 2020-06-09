@@ -187,7 +187,7 @@ class IndexPage1 extends Component {
       <div className={` py-12 bg-gray-100`}>
           <div className="mx-auto md:w-1/2 text-center py-12">
             <h3 className='dark:text-white font-medium text-gray-800 font-gt block mb-12 font-bold'>Want to get early access and product updates?</h3> 
-            <a onClick={this.runSurvey} className=' inline-block font-bold px-4 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-sm a-button' style= {{ backgroundColor:"#ed4857"}} >Count me in 🙋‍♀️</a>  
+            <a onClick={this.runSurvey} className=' block md:inline-block font-bold px-4 py-3 bg-purple-700 hover:bg-purple-800 text-white font-gt rounded text-sm a-button' style= {{ backgroundColor:"#ed4857"}} >Count me in 🙋‍♀️</a>  
           </div>
         </div>
 
@@ -270,7 +270,7 @@ class IndexPage extends Component {
               <h1 className="w-full text-3xl md:text-5xl text-newblue-900 font-gt">{}Kick start your  open <br /> source contribution{}</h1>
               <p className=" font-gt text-base md:text-lg text-newblue-900 leading-relaxed tracking-wide letter">Leapcode helps you contribute to open source projects right from your first pull request to working on major projects</p>
             
-              <button  onClick={this.runSurvey} className="bg-newblue-800 text-white font-gt font-semibold px-6 py-3 text-sm md:text-base rounded-lg mt-8">Get Early Access</button>
+              <button  onClick={this.runSurvey} className=" bg-newblue-800 text-white font-gt font-semibold px-6 py-3 text-sm md:text-base rounded-lg mt-8">Get Early Access</button>
             </div>
 
             {/* <div className="w-full md:w-1/2">
@@ -356,7 +356,7 @@ class IndexPage extends Component {
               </div>
 
 
-              <a href="https://airtable.com/shrGWFt2xQsfAHMu4" className=" mt-8 bg-gray-300 hover:bg-gray-400 text-newblue-900 font-semibold font-gt px-6 py-3 rounded">Add your Repository</a>
+              <a href="https://airtable.com/shrGWFt2xQsfAHMu4" target="_blank" className=" mt-12 block text-center md:inline-block bg-gray-300 hover:bg-gray-400 text-newblue-900 font-semibold font-gt px-6 py-3 rounded">Add your Repository</a>
 
             </div>
             
@@ -376,7 +376,7 @@ class IndexPage extends Component {
         </div> */}
 
 
-        <div className="py-12 md:mt-32 bg-black mt-8">
+        <div className="py-12 mt-12 md:mt-32 bg-black">
           <div className="max-w-screen-lg mx-auto px-2">
             <div className="grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-4">
               <div className="le">
@@ -395,9 +395,9 @@ class IndexPage extends Component {
                 </ul>
               </div>
 
-              <div className="rt text-sm md:text-right flex flex-col justify-end items-end">
-                <img src={require('../assets/images/leapcode-logo-circle.svg')}></img>
-                <span className="text-gray-400 opacity-75 font-gt">Ⓒ 2020 Leapcode</span>
+              <div className="rt text-sm md:text-right flex items-center md:justify-end md:items-center px-6">
+                <img className="w-10 mb-0" src={require('../assets/images/leapcode-logo-circle.svg')}></img>
+                <span className="text-gray-400 opacity-75 font-gt ml-4">Ⓒ 2020 Leapcode</span>
               </div>
              
             </div>
