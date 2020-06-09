@@ -324,11 +324,11 @@ class IndexPage extends Component {
 
 
 
-        <section className="md:mt-32" >
+        <section className="md:mt-32 mt-16" >
           <div className="max-w-screen-lg mx-auto">
             <div className="md:w-2/3 px-6 md:px-0">
 
-              <h2 className="text-4xl font-gt text-newblue-900 leading-snug">Improve your contributor experience for your open source project</h2>
+              <h2 className="text-3xl md:text-4xl font-gt text-newblue-900 leading-snug">Improve your contributor experience for your open source project</h2>
               <p className="text-newblue-900 tracking-wide font-gt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <div class="check__item">
                 <h5 className="text-2xl font-gt text-newblue-900">Simple Process</h5>
