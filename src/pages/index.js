@@ -12,15 +12,35 @@ const tweets = [
   {
     id:0,
     username: 'archanaserver',
-    html: `<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The platform is so cool for all who is going to join <a href="https://twitter.com/hashtag/LeapcodeOpen?src=hash&amp;ref_src=twsrc%5Etfw">#LeapcodeOpen</a>, the best part of this platform is everyone contributor will get scores after each pull requests. 🤩<br><br>Thank you <a href="https://twitter.com/isethu?ref_src=twsrc%5Etfw">@isethu</a> and the <a href="https://twitter.com/leapcodeio?ref_src=twsrc%5Etfw">@leapcodeio</a> team for building this platform. This is going to be huge soon.🔥</p>&mdash; Archana🦉 (@archanaserver) <a href="https://twitter.com/archanaserver/status/1268254820080615424?ref_src=twsrc%5Etfw">June 3, 2020</a></blockquote>`
+    html: `<blockquote class="twitter-tweet" data-conversation="none" data-theme="dark"><p lang="en" dir="ltr">The platform is so cool for all who is going to join <a href="https://twitter.com/hashtag/LeapcodeOpen?src=hash&amp;ref_src=twsrc%5Etfw">#LeapcodeOpen</a>, the best part of this platform is everyone contributor will get scores after each pull requests. 🤩<br><br>Thank you <a href="https://twitter.com/isethu?ref_src=twsrc%5Etfw">@isethu</a> and the <a href="https://twitter.com/leapcodeio?ref_src=twsrc%5Etfw">@leapcodeio</a> team for building this platform. This is going to be huge soon.🔥</p>&mdash; Archana🦉 (@archanaserver) <a href="https://twitter.com/archanaserver/status/1268254820080615424?ref_src=twsrc%5Etfw">June 3, 2020</a></blockquote>`
   },
   {
     id:1,
     username:'hiralthaker12',
-    html:`<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The platform is so easy and insightful to understand, play around and make your first open source contribution.<br><br>Waiting for them to go public with their project.<a href="https://twitter.com/hashtag/opensource?src=hash&amp;ref_src=twsrc%5Etfw">#opensource</a> <a href="https://twitter.com/hashtag/opensourceprojects?src=hash&amp;ref_src=twsrc%5Etfw">#opensourceprojects</a> <a href="https://twitter.com/hashtag/WomenInTech?src=hash&amp;ref_src=twsrc%5Etfw">#WomenInTech</a></p>&mdash; Thaker Hiral #WomenInTech #IWD20 #TogetherWeRise (@hiralthaker12) <a href="https://twitter.com/hiralthaker12/status/1267501834010312704?ref_src=twsrc%5Etfw">June 1, 2020</a></blockquote>`
+    html:`<blockquote class="twitter-tweet" data-conversation="none" data-theme="dark"><p lang="en" dir="ltr">The platform is so easy and insightful to understand, play around and make your first open source contribution.<br><br>Waiting for them to go public with their project.<a href="https://twitter.com/hashtag/opensource?src=hash&amp;ref_src=twsrc%5Etfw">#opensource</a> <a href="https://twitter.com/hashtag/opensourceprojects?src=hash&amp;ref_src=twsrc%5Etfw">#opensourceprojects</a> <a href="https://twitter.com/hashtag/WomenInTech?src=hash&amp;ref_src=twsrc%5Etfw">#WomenInTech</a></p>&mdash; Thaker Hiral #WomenInTech #IWD20 #TogetherWeRise (@hiralthaker12) <a href="https://twitter.com/hiralthaker12/status/1267501834010312704?ref_src=twsrc%5Etfw">June 1, 2020</a></blockquote>`
 
   }
 ]
+
+
+
+const UserSteps = [{
+  id:0,
+  heading: 'Create an Account',
+  desc: 'Sign in using your GitHub account'
+}, {
+  id:1,
+  heading: 'Pick a Repository',
+  desc: 'Pick a repo matching with your skills from our curated list'
+}, {
+  id:2,
+  heading: 'Start Contributing',
+  desc: 'Streamlined & simple steps to help you contribute to the repo'
+}, {
+  id:3,
+  heading: 'Earn Rewards 🔥',
+  desc: 'Receive points as you progress through the steps. Brownie points & badges when your Pull Request is accepted.'
+}]
 
 
 const blockData = [{
@@ -77,7 +97,7 @@ const SurveyModel = ({ isOpen, onClose }) => (
   </div>
 )
 
-class IndexPage extends Component {
+class IndexPage1 extends Component {
 
   componentDidMount() {
     let el = document.createElement("script");
@@ -133,7 +153,7 @@ class IndexPage extends Component {
         <img className="md:w-2/3 w-1/2 mx-auto md:mx-1" src={require('../images/leapcode--open--noslash.png')} />
       </div> */}
       <div className="md:w-2/3  center text-center px-2">
-        <img className="md:w-1/4 w-1/3 mx-auto mb-12" src="https://women.leapcode.io/static/logo-v3.png" />
+        <img className="md:w-1/4 w-1/3 mx-auto mb-24" src={require('../assets/images/leapcode-logo.svg')} />
 
         <h1 className="font-medium dark:text-white font-gt font-bold tracking-tight text-gray-900 leading-16 lg:text-5xl">Kick start your open source contribution</h1>
         <p className='dark:text-white font-medium font-gt lg:text-2xl leading-8'>Leapcode helps you contribute to open source projects right from your first pull request to working on major projects</p>
@@ -199,7 +219,199 @@ But still, we can make it more comfortable and exciting for you to get started. 
  
 
   </Layout>
-)}}
+)}};
+
+
+
+class IndexPage extends Component {
+
+  state = {
+    sur: false
+  }
+
+  runSurvey = () => {
+
+    trackCustomEvent({
+      // string - required - The object that was interacted with (e.g.video)
+      category: "Form Filling",
+      // string - required - Type of interaction (e.g. 'play')
+      action: "Click",
+      // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
+      label: "Beta Form",
+      // number - optional - Numeric value associated with the event. (e.g. A product ID)
+      value: 1
+    })
+
+
+    this.setState({
+      sur: true
+    })
+  }
+
+  onClose = () => {
+    this.setState({
+      sur: false
+    })
+  }
+
+
+
+  render() {
+    return(
+      <Layout>
+        <SEO title="Leapcode" />
+        <SurveyModel onClose={this.onClose} isOpen={this.state.sur} />
+        <div className="max-w-screen-lg mx-auto mt-12 md:mt-32">
+          <div className="flex justify-center">
+
+         
+            <div className="w-full md:w-1/2 text-center px-6 md:px-0">
+              <img className="md:w-1/2 w-1/2 mx-auto mb-24" src={require('../assets/images/leapcode-logo--new.svg')} />
+              <h1 className="w-full text-3xl md:text-5xl text-newblue-900 font-gt">{}Kick start your  open <br /> source contribution{}</h1>
+              <p className=" font-gt text-base md:text-lg text-newblue-900 leading-relaxed tracking-wide letter">Leapcode helps you contribute to open source projects right from your first pull request to working on major projects</p>
+            
+              <button  onClick={this.runSurvey} className="bg-newblue-800 text-white font-gt font-semibold px-6 py-3 text-sm md:text-base rounded-lg mt-8">Get Early Access</button>
+            </div>
+
+            {/* <div className="w-full md:w-1/2">
+
+            </div> */}
+
+
+          </div>
+        </div>  
+
+
+
+
+        <div className="bg-newblue-100 mt-12 md:mt-64 py-12 md:pt-32 md:pb-24 steps--container">
+          <div className="max-w-screen-lg mx-auto">
+            <div className="flex steps-section justify-center ">
+              {/* <div className="md:w-1/2"></div> */}
+              <div className="md:w-1/2 px-6 md:px-0">
+                <h3 className=" text-2xl text-center md:text-3xl font-bold text-newblue-900 leading-relaxed font-gt">Make your first Pull Request <br /> in 5 minutes</h3>
+                <div className="steps-area ">
+                  {
+                      UserSteps.map(step => (
+                        <div class="step__item active">
+                          <span class="step__item-number font-gt"></span>
+                          <div class="step__item-content">
+                            <span className="font-gt text-xl md:text-2xl mb-4 block text-newblue-900 font-bold">{step.heading}</span>
+                            <p className="font-gt">{step.desc}</p>
+                          </div>
+                        </div>
+                      ))
+                  }
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="mt-24 text-center">
+                <h2 className="font-gt md:text-5xl text-newblue-900">Don’t take our word for it</h2>
+                <p className="font-gt text-newblue-900 tracking-wide">Our users are already talking about it on twitter</p>
+          <div className="mt-12 md:mt-24 px-4 md:px-0 max-w-screen-sm md:max-w-screen-lg mx-auto flex flex-col md:grid md:grid-cols-2 md:gap-16"> 
+            { tweets.map(tweet => <div key={tweet.id} className="">
+                <div className="" dangerouslySetInnerHTML={{ __html: tweet.html }} />
+            </div>) }
+          </div>
+
+        </div>
+       
+
+
+        <div className=" mt-12 md:mt-32 text-center bg-newblue-800 py-12 md:py-32 strokes-bg">
+          <div className="max-w-screen-md mx-auto px-6 md:px-2">
+            <h2 className="text-3xl md:text-4xl font-gt text-white">Contributing to open source is now <br />easy & rewarding</h2>
+            <p className="font-gt text-white  leading-relaxed tracking-wide">A lot of first time contributor face issues in finding a project, figuring out what to contribute, understanding the repo etc. With Leapcode, we are empowering first time contributors by motivating & rewarding each step they take towards the contribution.</p>
+            <button  onClick={this.runSurvey} className="bg-white hover:bg-gray-200 px-6 py-3 text-base rounded-lg mt-8 font-gt font-bold text-newblue-900">Get Early Access</button>
+          </div>
+        </div>
+
+
+
+        <section className="md:mt-32 mt-16" >
+          <div className="max-w-screen-lg mx-auto">
+            <div className="md:w-2/3 px-6 md:px-0">
+              <small className="font-gt font-bold block mb-4 text-lg opacity-75">For Open Source Project Owners</small>
+              <h2 className="text-4xl font-gt text-newblue-900 leading-snug">Create a seamless experience for your contributors</h2>
+              <p className="text-newblue-900 tracking-wide font-gt">For open source project maintainers & owners, Leapcode helps you onboard first time contribitors by simplyfying your contribution process & making it interesting.</p>
+              <div class="check__item">
+                <h5 className="text-2xl font-gt text-newblue-900">Onboard new contributors easily</h5>
+                <p className="text-base font-gt  text-newblue-900 tracking-wide">Onboard & navigate new contributors to your open source projects quickly</p>
+              </div>
+
+              <div class="check__item">
+                <h5 className="text-2xl font-gt text-newblue-900">Access to a thriving community</h5>
+                <p className="text-base font-gt  text-newblue-900 tracking-wide">Get an ethusiastic and motivated community to contribute to your projects</p>
+              </div>
+
+
+              <div class="check__item">
+                <h5 className="text-2xl font-gt text-newblue-900">Grow your projects</h5>
+                <p className="text-base font-gt  text-newblue-900 tracking-wide">Get issues fixed & features added from a community of contributors that helps each other</p>
+              </div>
+
+
+              <button className=" mt-8 bg-gray-300 hover:bg-gray-400 text-newblue-900 font-semibold font-gt px-6 py-3 rounded">Add your Repo</button>
+
+            </div>
+            
+            
+          </div>
+        </section>
+
+
+
+
+        {/* <div className="mt-12 md:mt-32 text-center bg-newblue-200 py-24 strokes-bg">
+          <div className="max-w-screen-md mx-auto px-6 md:px-2">
+            <h2 className="text-3xl md:text-4xl font-gt text-newblue-900">Interested to get started to contribute to open source?</h2>
+            <p className="font-gt text-newblue-900 leading-relaxed tracking-wide"></p>
+            <button  onClick={this.runSurvey} className="text-white px-6 py-3 text-base rounded-lg mt-8 font-gt font-bold bg-newblue-900">Join the waitlist</button>
+          </div>
+        </div> */}
+
+
+        <div className="py-12 md:mt-32 bg-black mt-8">
+          <div className="max-w-screen-lg mx-auto px-2">
+            <div className="grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-4">
+              <div className="le">
+                  <ul className="text-sm">
+                    <li> <a href="https://women.leapcode.io" className='hover:underline cursor-pointer text-gray-200 font-gt'>Women in Tech Commmunity</a></li>
+                    <li> <a href="/faq" className='hover:underline cursor-pointer text-gray-200 font-gt'>Frequently Asked Questions</a></li>
+                    <li> <a href="/privacy" className='hover:underline cursor-pointer text-gray-200 font-gt'>Code of Conduct</a></li>
+                  </ul>
+              </div>
+
+              <div className="mm text-sm">
+                <ul>
+                  <li className='hover:underline text-gray-200 font-gt'><a href="https://twitter.com/leapcodeio">Follow us on Twitter</a></li>
+                  <li className='hover:underline text-gray-200 font-gt'><a href="https://facebook.com/leapcodeio">Follow us on Facebook</a></li>
+                  <li className='hover:underline text-gray-200 font-gt'><a href="https://linkedin.com/leapcodeio">Follow us on Linkedin</a></li>
+                </ul>
+              </div>
+
+              <div className="rt text-sm md:text-right flex flex-col justify-end items-end">
+                <img src={require('../assets/images/leapcode-logo-circle.svg')}></img>
+                <span className="text-gray-400 opacity-75 font-gt">Ⓒ 2020 Leapcode</span>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        
+      </Layout>
+    )
+    
+  }
+}
+
 
 
 export default IndexPage
