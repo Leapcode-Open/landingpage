@@ -23,6 +23,22 @@ const tweets = [
 ]
 
 
+
+const UserSteps = [{
+  id:0,
+  heading: 'Create an account',
+  desc: 'Sign up for an account using your github account'
+}, {
+  id:1,
+  heading: 'Pick up a project',
+  desc: 'Our streamlined & simple steps on how to contribute to each repo will help you get started & make contributions.'
+}, {
+  id:2,
+  heading: 'Get rewarded',
+  desc: 'Receive points as you progress through the contribution process. Brownie points & badges when your Pull Request is accepted.'
+}]
+
+
 const blockData = [{
   id:1,
   title:'Beginner Friendly',
@@ -77,7 +93,7 @@ const SurveyModel = ({ isOpen, onClose }) => (
   </div>
 )
 
-class IndexPage extends Component {
+class IndexPage1 extends Component {
 
   componentDidMount() {
     let el = document.createElement("script");
@@ -199,7 +215,95 @@ But still, we can make it more comfortable and exciting for you to get started. 
  
 
   </Layout>
-)}}
+)}};
+
+
+
+class IndexPage extends Component {
+
+  render() {
+    return(
+      <Layout>
+        <div className="max-w-screen-lg mx-auto md:mt-48">
+          <div className="flex justify-center">
+
+         
+            <div className="w-full md:w-1/2 text-center">
+              <img className="md:w-1/2 w-1/3 mx-auto mb-12" src="https://women.leapcode.io/static/logo-v3.png" />
+              <h1 className="w-full text-5xl text-newblue-900 font-gt">{}Kick start your  open <br /> source contribution{}</h1>
+              <p className=" font-gt text-newblue-900 text-lg leading-relaxed tracking-wide letter">Leapcode helps you contribute to open source projects right from your first pull request to working on major projects</p>
+            
+              <button className="bg-newblue-800 text-white font-gt font-semibold px-6 py-3 text-base rounded-lg mt-8">Join the waitlist</button>
+            </div>
+
+            {/* <div className="w-full md:w-1/2">
+
+            </div> */}
+
+
+          </div>
+        </div>  
+
+
+
+
+        <div className="bg-newblue-100  md:mt-64 py-12 md:pt-32 md:pb-24">
+          <div className="max-w-screen-lg mx-auto">
+            <div className="flex steps-section ">
+              <div className="w-1/2"></div>
+              <div className="w-1/2 ">
+                <h3 className="text-3xl font-bold text-newblue-900 leading-relaxed font-gt">Start your First Pull Request <br /> in 5 minutes</h3>
+                <div className="steps-area ">
+                  {
+                      UserSteps.map(step => (
+                        <div class="step__item active">
+                          <span class="step__item-number"></span>
+                          <div class="step__item-content">
+                            <span className="font-gt text-2xl mb-4 block text-newblue-900 font-bold">{step.heading}</span>
+                            <p className="font-gt">{step.desc}</p>
+                          </div>
+                        </div>
+                      ))
+                  }
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div className="md:mt-24 px-4 md:px-0 max-w-screen-sm md:max-w-screen-lg mx-auto flex flex-col md:grid md:grid-cols-2 md:gap-16">
+          { tweets.map(tweet => <div key={tweet.id} className="">
+              <div className="" dangerouslySetInnerHTML={{ __html: tweet.html }} />
+          </div>) }
+        </div>
+
+
+        <div className=" md:mt-32 text-center bg-newblue-800 py-32 strokes-bg">
+          <div className="max-w-screen-md mx-auto">
+            <h2 className="text-4xl font-gt text-white">Contributing to open source is now <br />easy & rewarding</h2>
+            <p className="font-gt text-white  leading-relaxed tracking-wide">A lot of first time contributor face issues in finding a project, figuring out what to contribute, understanding the repo etc. With Leapcode, we are solving this by motivating & rewarding  contributors on each step they take towards the contribution.</p>
+          </div>
+        </div>
+
+
+
+        <div className="">
+          <div className="max-w-screen-lg mx-auto">
+
+          </div>
+        </div>
+
+
+        
+      </Layout>
+    )
+    
+  }
+}
+
 
 
 export default IndexPage
