@@ -26,16 +26,20 @@ const tweets = [
 
 const UserSteps = [{
   id:0,
-  heading: 'Create an account',
-  desc: 'Sign up for an account using your github account'
+  heading: 'Create an Account',
+  desc: 'Sign in using your GitHub account'
 }, {
   id:1,
-  heading: 'Pick up a project',
-  desc: 'Our streamlined & simple steps on how to contribute to each repo will help you get started & make contributions.'
+  heading: 'Pick a Repository',
+  desc: 'Pick a repo matching with your skills from our curated list'
 }, {
   id:2,
-  heading: 'Get rewarded',
-  desc: 'Receive points as you progress through the contribution process. Brownie points & badges when your Pull Request is accepted.'
+  heading: 'Start Contributing',
+  desc: 'Streamlined & simple steps to help you contribute to the repo'
+}, {
+  id:3,
+  heading: 'Earn Rewards🔥',
+  desc: 'Receive points as you progress through the steps. Brownie points & badges when your Pull Request is accepted.'
 }]
 
 
@@ -285,7 +289,7 @@ class IndexPage extends Component {
             <div className="flex steps-section ">
               <div className="md:w-1/2"></div>
               <div className="md:w-1/2 px-6 md:px-0">
-                <h3 className=" text-2xl md:text-3xl font-bold text-newblue-900 leading-relaxed font-gt">Start your First Pull Request <br /> in 5 minutes</h3>
+                <h3 className=" text-2xl md:text-3xl font-bold text-newblue-900 leading-relaxed font-gt">Make your first Pull Request <br /> in 5 minutes</h3>
                 <div className="steps-area ">
                   {
                       UserSteps.map(step => (
@@ -317,7 +321,7 @@ class IndexPage extends Component {
         <div className=" mt-12 md:mt-32 text-center bg-newblue-800 py-12 md:py-32 strokes-bg">
           <div className="max-w-screen-md mx-auto px-6 md:px-2">
             <h2 className="text-3xl md:text-4xl font-gt text-white">Contributing to open source is now <br />easy & rewarding</h2>
-            <p className="font-gt text-white  leading-relaxed tracking-wide">A lot of first time contributor face issues in finding a project, figuring out what to contribute, understanding the repo etc. With Leapcode, we are solving this by motivating & rewarding  contributors on each step they take towards the contribution.</p>
+            <p className="font-gt text-white  leading-relaxed tracking-wide">A lot of first time contributor face issues in finding a project, figuring out what to contribute, understanding the repo etc. With Leapcode, we are empowering first time contributors by motivating & rewarding each step they take towards the contribution.</p>
             <button className="bg-white px-6 py-3 text-base rounded-lg mt-8 font-gt font-bold text-newblue-900">Join the community</button>
           </div>
         </div>
@@ -328,26 +332,26 @@ class IndexPage extends Component {
           <div className="max-w-screen-lg mx-auto">
             <div className="md:w-2/3 px-6 md:px-0">
 
-              <h2 className="text-4xl font-gt text-newblue-900 leading-snug">Improve your contributor experience for your open source project</h2>
-              <p className="text-newblue-900 tracking-wide font-gt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h2 className="text-4xl font-gt text-newblue-900 leading-snug">Create a seamless experience for your contributors</h2>
+              <p className="text-newblue-900 tracking-wide font-gt">For open source project maintainers & owners, Leapcode helps you onboard first time contribitors by simplyfying your contribution process & making it interesting.</p>
               <div class="check__item">
-                <h5 className="text-2xl font-gt text-newblue-900">Simple Process</h5>
-                <p className="text-base font-gt  text-newblue-900 tracking-wide"> Navigate your first time contributors to get started quickly.</p>
+                <h5 className="text-2xl font-gt text-newblue-900">Onboard new contributors easily</h5>
+                <p className="text-base font-gt  text-newblue-900 tracking-wide">Onboard & navigate new contributors to your open source projects quickly</p>
               </div>
 
               <div class="check__item">
-                <h5 className="text-2xl font-gt text-newblue-900">Motivation through rewards</h5>
-                <p className="text-base font-gt  text-newblue-900 tracking-wide"> Navigate your first time contributors to get started quickly.</p>
+                <h5 className="text-2xl font-gt text-newblue-900">Access to a thriving community</h5>
+                <p className="text-base font-gt  text-newblue-900 tracking-wide">Get an ethusiastic and motivated community to contribute to your projects</p>
               </div>
 
 
               <div class="check__item">
-                <h5 className="text-2xl font-gt text-newblue-900">Community that helps each other</h5>
-                <p className="text-base font-gt  text-newblue-900 tracking-wide"> Navigate your first time contributors to get started quickly.</p>
+                <h5 className="text-2xl font-gt text-newblue-900">Grow your projects</h5>
+                <p className="text-base font-gt  text-newblue-900 tracking-wide">Get issues fixed & features added from a community of contributors that helps each other</p>
               </div>
 
 
-              <button className=" mt-8 bg-gray-300 hover:bg-gray-400 text-newblue-900 font-semibold font-gt px-6 py-3 rounded">Onboard your project</button>
+              <button className=" mt-8 bg-gray-300 hover:bg-gray-400 text-newblue-900 font-semibold font-gt px-6 py-3 rounded">Add your Repo</button>
 
             </div>
             
@@ -358,23 +362,23 @@ class IndexPage extends Component {
 
 
 
-        <div className="mt-12 md:mt-32 text-center bg-newblue-200 py-24 strokes-bg">
+        {/* <div className="mt-12 md:mt-32 text-center bg-newblue-200 py-24 strokes-bg">
           <div className="max-w-screen-md mx-auto px-6 md:px-2">
             <h2 className="text-3xl md:text-4xl font-gt text-newblue-900">Interested to get started to contribute to open source?</h2>
             <p className="font-gt text-newblue-900 leading-relaxed tracking-wide"></p>
             <button  onClick={this.runSurvey} className="text-white px-6 py-3 text-base rounded-lg mt-8 font-gt font-bold bg-newblue-900">Join the waitlist</button>
           </div>
-        </div>
+        </div> */}
 
 
-        <div className=" py-12">
+        <div className=" py-12 bg-indigo-200 mt-8">
           <div className="max-w-screen-lg mx-auto px-2">
             <div className="grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-4">
               <div className="le">
                   <ul className="text-sm">
-                    <li> <a href="https://women.leapcode.io" className='hover:underline cursor-pointer text-gray-600 font-gt'>Women in tech commmunity</a></li>
-                    <li> <a href="/faq" className='hover:underline cursor-pointer text-gray-600 font-gt'>Frequently asked questions</a></li>
-                    <li> <a href="/privacy" className='hover:underline cursor-pointer text-gray-600 font-gt'>Privacy Policy</a></li>
+                    <li> <a href="https://women.leapcode.io" className='hover:underline cursor-pointer text-gray-600 font-gt'>Women in Tech Commmunity</a></li>
+                    <li> <a href="/faq" className='hover:underline cursor-pointer text-gray-600 font-gt'>Frequently Asked Questions</a></li>
+                    <li> <a href="/privacy" className='hover:underline cursor-pointer text-gray-600 font-gt'>Code of Conduct</a></li>
                   </ul>
               </div>
 
@@ -386,7 +390,7 @@ class IndexPage extends Component {
               </div>
 
               <div className="rt text-sm md:text-right">
-                <span className="text-gray-400 font-gt">Copyright 2020 Leapcode</span>
+                <span className="text-gray-600 font-gt">Ⓒ 2020 Leapcode</span>
               </div>
              
             </div>
