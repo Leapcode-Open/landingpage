@@ -20,6 +20,7 @@ function SEO({ description, lang, meta, title, image }) {
             description
             author
             image
+            url
           }
         }
       }
@@ -46,7 +47,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:image`,
-          content: '/splash.png',
+          content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
         },
         {
           property: `og:description`,
@@ -66,7 +67,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `twitter:image`,
-          content: 'https://leapcode.io/splash.png',
+          content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
         },
         {
           name: `twitter:title`,
