@@ -383,33 +383,7 @@ class IndexPage extends Component {
         </div> */}
 
 
-        <div className="py-12 mt-12 md:mt-32 bg-black">
-          <div className="max-w-screen-lg mx-auto px-2">
-            <div className="grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-4">
-              <div className="le">
-                  <ul className="text-sm">
-                    <li> <a href="https://women.leapcode.io" className='hover:underline cursor-pointer text-gray-200 font-gt'>Women in Tech Commmunity</a></li>
-                    <li> <a href="/faq" className='hover:underline cursor-pointer text-gray-200 font-gt'>Frequently Asked Questions</a></li>
-                    <li> <a href="/code-of-conduct" className='hover:underline cursor-pointer text-gray-200 font-gt'>Code of Conduct</a></li>
-                  </ul>
-              </div>
 
-              <div className="mm text-sm">
-                <ul>
-                  <li className='hover:underline text-gray-200 font-gt'><a href="https://twitter.com/leapcodeio">Follow us on Twitter</a></li>
-                  <li className='hover:underline text-gray-200 font-gt'><a href="https://facebook.com/leapcodeio">Follow us on Facebook</a></li>
-                  <li className='hover:underline text-gray-200 font-gt'><a href="https://linkedin.com/leapcodeio">Follow us on Linkedin</a></li>
-                </ul>
-              </div>
-
-              <div className="rt text-sm md:text-right flex items-center md:justify-end md:items-center px-6">
-                <img className="w-10 mb-0" src={require('../assets/images/leapcode-logo-circle.svg')}></img>
-                <span className="text-gray-400 opacity-75 font-gt ml-4">Ⓒ 2020 Leapcode</span>
-              </div>
-             
-            </div>
-          </div>
-        </div>
 
 
         
