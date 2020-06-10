@@ -390,7 +390,7 @@ class IndexPage extends Component {
                   <ul className="text-sm">
                     <li> <a href="https://women.leapcode.io" className='hover:underline cursor-pointer text-gray-200 font-gt'>Women in Tech Commmunity</a></li>
                     <li> <a href="/faq" className='hover:underline cursor-pointer text-gray-200 font-gt'>Frequently Asked Questions</a></li>
-                    <li> <a href="/privacy" className='hover:underline cursor-pointer text-gray-200 font-gt'>Code of Conduct</a></li>
+                    <li> <a href="/code-of-conduct" className='hover:underline cursor-pointer text-gray-200 font-gt'>Code of Conduct</a></li>
                   </ul>
               </div>
 
