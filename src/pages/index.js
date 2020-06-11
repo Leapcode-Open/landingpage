@@ -345,7 +345,7 @@ class IndexPage extends Component {
             <div className="md:w-2/3 px-6 md:px-0">
               <small className="font-gt font-bold block mb-4 text-lg opacity-75">For Open Source Project Owners</small>
               <h2 className="text-4xl font-gt text-newblue-900 leading-snug">Create a seamless experience for your contributors</h2>
-              <p className="text-newblue-900 tracking-wide font-gt">For open source project maintainers & owners, Leapcode helps you onboard first time contribitors by simplyfying your contribution process & making it interesting.</p>
+              <p className="text-newblue-900 tracking-wide font-gt">For open source project maintainers & owners, Leapcode helps you onboard first time contributors by simplyfying your contribution process & making it interesting.</p>
               <div class="check__item">
                 <h5 className="text-2xl font-gt text-newblue-900">Onboard new contributors easily</h5>
                 <p className="text-base font-gt  text-newblue-900 tracking-wide">Onboard & navigate new contributors to your open source projects quickly</p>
