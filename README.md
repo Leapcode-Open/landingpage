@@ -15,6 +15,10 @@ Leapcode is an online platform that motivates & rewards open source contributors
 
 **To get started with contributing to this project & read the complete documentation, signup on https://leapcode.io**
 
+If you are here as part of your first PR project, please ignore the below steps.
+
+If you are here to contribute to the leapcode landing page, here is how to setup your local.
+
 1.  **Start developing.**
 
     Navigate into landingpage directory and start it up.
