@@ -13,11 +13,11 @@ Leapcode is an online platform that motivates & rewards open source contributors
 
 ## 🚀 Quick start
 
-**To get started with contributing to this project, signup on https://leapcode.io**
+**To get started with contributing to this project & read the complete documentation, signup on https://leapcode.io**
 
 1.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Navigate into landingpage directory and start it up.
 
     ```shell
     cd landingpage/
