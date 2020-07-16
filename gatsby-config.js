@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Leapcode`,
-    description: `Make your first Open Source contribution`,
+    description: `Open Source contribution made easy`,
     author: `@isethu`,
-    image:'/new-splash.jpeg',
-    url: "https://open.leapcode.io",
+    image:'/og-image.jpeg',
+    url: "https://leapcode.io",
     twitterUsername:'@leapcodeio'
   },
   plugins: [
@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `leapcode-open`,
+        name: `leapcode`,
         short_name: `leapcode`,
         start_url: `/`,
         background_color: `#663399`,
