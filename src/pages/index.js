@@ -268,6 +268,8 @@ class IndexPage extends Component {
       <Layout>
         <SEO title="Leapcode" />
         <SurveyModel onClose={this.onClose} isOpen={this.state.sur} />
+        <div className="py-3 w-screen text-center text-sm font-gt bg-gray-800 font-bold text-white">Leapcode won the GNOME Community Engagement Challenge Phase One 🎉  - <a className='font-bold hover:underline' href="https://www.gnome.org/challenge/phase-one-winners/">Read more</a></div>
+
         <div className="max-w-screen-lg mx-auto mt-12 md:mt-32">
           <div className="flex justify-center">
 
