@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-
+import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo";
@@ -264,9 +264,10 @@ class IndexPage extends Component {
 
 
   render() {
+    console.log(this.props.data);
     return(
       <Layout>
-        <SEO title="Leapcode" />
+        <SEO title="Leapcode - Make your first open source contribution" />
         <SurveyModel onClose={this.onClose} isOpen={this.state.sur} />
         <div className="py-3 w-screen text-center text-sm font-gt bg-gray-800 font-bold text-white">Leapcode is a winner of the Community Engagement Challenge - Phase One🎉 by GNOME & Endless - <a className='font-bold hover:underline' href="https://www.gnome.org/challenge/phase-one-winners/">Read more</a></div>
 
@@ -328,6 +329,26 @@ class IndexPage extends Component {
             </div>) }
           </div>
 
+
+         
+            <div className="max-w-screen-lg mx-auto mt-4">
+              <h2 className="">Recent contributors who did their first pull request</h2>
+              <div className="grid gap-4 grid-cols-3 text-left mt-10">
+                  {
+                    this.props.data.allMarkdownRemark.edges.filter(c => c.node.frontmatter.username != 'sethusathyan').map(contrib => (
+                      <a key={contrib.node.frontmatter.username} href={`/contributor/${contrib.node.frontmatter.username}`} className="border cursor-pointer border-gray-300 p-3 shadow-sm hover:shadow-lg transition transition-duration-100 rounded">
+                        <h3 className="font-gt text-base mb-2">{contrib.node.frontmatter.name}</h3>
+                        <p  className="font-gt text-sm mb-0">{contrib.node.frontmatter.bio}</p>
+                      </a>
+                    ))
+                  }
+              </div>
+
+              <a className="text-blue-600 font-bold font-gt mt-10 block hover:underline" href="/contributor">See all contributors →</a>
+
+            </div>
+          
+
         </div>
        
 
@@ -339,6 +360,8 @@ class IndexPage extends Component {
             <button  onClick={this.runSurvey} className="bg-white hover:bg-gray-200 px-6 py-3 text-base rounded-lg mt-8 font-gt font-bold text-newblue-900">Get Early Access</button>
           </div>
         </div>
+
+
 
 
 
@@ -394,6 +417,32 @@ class IndexPage extends Component {
     
   }
 }
+
+
+export const query = graphql`
+  query HomePageQuery {
+    site {
+      siteMetadata {
+        description
+      }
+    }
+    
+      allMarkdownRemark(
+        limit: 4
+      ) {
+        edges {
+          node {
+            frontmatter {
+              username
+              name
+              bio
+            }
+          }
+        }
+      }
+    
+  }
+`
 
 
 
