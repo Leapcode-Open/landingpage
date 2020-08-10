@@ -91,6 +91,7 @@ function SEO({ description, lang, meta, title, image }) {
             "https://twitter.com/leapcodeio",
             "https://facebook.com/leapcodeio",
             "https://linkedin.com/leapcodeio"
+          ]
         }
       `}
   </script>
