@@ -78,7 +78,23 @@ function SEO({ description, lang, meta, title, image }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <script type="application/ld+json">
+    {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "https://leapcode.io",
+          "name": "Leapcode",
+          "description": ${metaDescription}
+          "sameAs": [
+            "https://twitter.com/leapcodeio",
+            "https://facebook.com/leapcodeio",
+            "https://linkedin.com/leapcodeio"
+        }
+      `}
+  </script>
+    </Helmet>
   )
 }
 

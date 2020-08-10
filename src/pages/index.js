@@ -337,7 +337,7 @@ class IndexPage extends Component {
                   {
                     this.props.data.allMarkdownRemark.edges.filter(c => c.node.frontmatter.username != 'sethusathyan').map(contrib => (
                       <a key={contrib.node.frontmatter.username} href={`/contributor/${contrib.node.frontmatter.username}`} className="border cursor-pointer border-gray-300 p-3 shadow-sm hover:shadow-lg transition transition-duration-100 rounded">
-                        <h3 className="font-gt text-base mb-2">{contrib.node.frontmatter.name}</h3>
+                        <h6 className="font-gt text-base mb-2">{contrib.node.frontmatter.name}</h6>
                         <p  className="font-gt text-sm mb-0">{contrib.node.frontmatter.bio}</p>
                       </a>
                     ))
@@ -428,7 +428,7 @@ export const query = graphql`
     }
     
       allMarkdownRemark(
-        limit: 4
+        limit: 3
       ) {
         edges {
           node {

@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Leapcode`,
-    description: `Open Source contribution made easy`,
+    description: `Leapcode helps you contribute to open source projects right from your first pull request to working on major projects`,
     author: `@isethu`,
     image:'/og-image.png',
     url: "https://leapcode.io",
-    twitterUsername:'@leapcodeio'
+    twitterUsername:'@leapcodeio',
+    siteUrl:'https://leapcode.io'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,6 +23,7 @@ module.exports = {
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-twitter`,
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {

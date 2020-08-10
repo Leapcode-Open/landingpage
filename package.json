@@ -16,6 +16,7 @@
     "gatsby-plugin-react-helmet": "^3.3.0",
     "gatsby-plugin-scroll-reveal": "^0.0.6",
     "gatsby-plugin-sharp": "^2.6.0",
+    "gatsby-plugin-sitemap": "^2.4.11",
     "gatsby-plugin-twitter": "^2.3.3",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.3.8",
