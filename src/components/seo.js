@@ -86,7 +86,7 @@ function SEO({ description, lang, meta, title, image }) {
           "@type": "Organization",
           "url": "https://leapcode.io",
           "name": "Leapcode",
-          "description": ${metaDescription}
+          "description": "${metaDescription}"
           "sameAs": [
             "https://twitter.com/leapcodeio",
             "https://facebook.com/leapcodeio",
