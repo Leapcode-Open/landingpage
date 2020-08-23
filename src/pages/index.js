@@ -332,7 +332,7 @@ class IndexPage extends Component {
 
          
             <div className="max-w-screen-lg mx-auto mt-4">
-              <h2 className="">Recent contributors who did their first pull request</h2>
+              <h2 className="">Recent contributors who made their first pull request</h2>
               <div className="grid gap-4 grid-cols-3 text-left mt-10">
                   {
                     this.props.data.allMarkdownRemark.edges.filter(c => c.node.frontmatter.username != 'sethusathyan').map(contrib => (
