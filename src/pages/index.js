@@ -171,7 +171,7 @@ class IndexPage extends Component {
 
 
         <div className="bg-blue-100 p-8 rounded-lg mt max-w-2xl mx-auto my-20 text-center">
-          <h3 className="text-xl font-gt text-blue-800 font-bold">Easy way to start and be part of Hacktoberfest fest</h3>
+          <h3 className="text-xl font-gt text-blue-800 font-bold">Easy way to start and be part of Hacktoberfest</h3>
           <p className="text-base font-gt mb-0">Participating in hacktoberfest? We are listing some amazing projects & resources to help you make your open source contributions easy.</p>
           {/* <a   onClick={this.runSurvey}  className="font-gt font-bold text-blue-800 hover:underline" href='#'>Sign up for access</a> */}
         </div>
