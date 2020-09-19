@@ -148,7 +148,7 @@ class IndexPage extends Component {
         <div className="">
 
     
-        <div className="max-w-screen-lg mx-auto mt-12 md:mt-32">
+        <div className="max-w-screen-lg mx-auto mt-12 md:mt-16">
           <div className="flex justify-center">
 
          
@@ -157,7 +157,7 @@ class IndexPage extends Component {
               <h1 className="w-full text-3xl md:text-5xl text-newblue-900 font-gt">{}Kick start your  open <br /> source contribution{}</h1>
               <p className=" font-gt text-base md:text-lg text-newblue-900 leading-relaxed tracking-wide letter">Leapcode helps you contribute to open source projects right from your first pull request to working on major projects</p>
             
-              <button  onClick={this.runSurvey} className=" bg-newblue-800 text-white font-gt font-semibold px-6 py-3 text-sm md:text-base rounded-lg mt-8">Get Early Access</button>
+              <button  onClick={this.runSurvey} className=" bg-newblue-800 text-white font-gt font-semibold px-6 py-3 text-sm md:text-base rounded-lg mt-4">Get Early Access</button>
             </div>
 
             {/* <div className="w-full md:w-1/2">
@@ -172,7 +172,7 @@ class IndexPage extends Component {
 
         <div className="bg-blue-100 p-8 rounded-lg mt max-w-2xl mx-auto my-20 text-center">
           <h3 className="text-xl font-gt text-blue-800 font-bold">Easy way to start and be part of Hacktoberfest fest</h3>
-          <p className="text-base font-gt">Participating in hacktoberfest? We are listing some amazing projects & resources to help you make your open source contributions easy.</p>
+          <p className="text-base font-gt mb-0">Participating in hacktoberfest? We are listing some amazing projects & resources to help you make your open source contributions easy.</p>
           {/* <a   onClick={this.runSurvey}  className="font-gt font-bold text-blue-800 hover:underline" href='#'>Sign up for access</a> */}
         </div>
 
