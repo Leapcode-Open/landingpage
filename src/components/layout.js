@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
                 <ul>
                   <li className='hover:underline text-gray-200 font-gt'><a href="https://twitter.com/leapcodeio" target="_blank">Follow us on Twitter</a></li>
                   <li className='hover:underline text-gray-200 font-gt'><a href="https://facebook.com/leapcodeio" target="_blank">Follow us on Facebook</a></li>
-                  <li className='hover:underline text-gray-200 font-gt'><a href="https://linkedin.com/leapcodeio" target="_blank">Follow us on Linkedin</a></li>
+                  <li className='hover:underline text-gray-200 font-gt'><a href="https://www.linkedin.com/company/leapcode" target="_blank">Follow us on Linkedin</a></li>
                 </ul>
               </div>
               <div className='rt'>
