@@ -153,7 +153,7 @@ class IndexPage extends Component {
 
          
             <div className="w-full md:w-2/3 text-center px-6 md:px-0">
-              <img className="md:w-1/3 w-1/2 mx-auto mb-12" src={require('../assets/images/leapcode-logo--new.svg')} />
+              <img alt='Leapcode Logo' className="md:w-1/3 w-1/2 mx-auto mb-12" src={require('../assets/images/leapcode-logo--new.svg')} />
               <h1 className="w-full text-3xl md:text-5xl text-newblue-900 font-gt">{}Kick start your  open <br /> source contribution{}</h1>
               <p className=" font-gt text-base md:text-lg text-newblue-900 leading-relaxed tracking-wide letter">Leapcode helps you contribute to open source projects right from your first pull request to working on major projects</p>
             

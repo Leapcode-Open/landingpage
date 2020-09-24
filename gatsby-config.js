@@ -25,6 +25,16 @@ module.exports = {
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
     {
+      resolve: 'gatsby-plugin-postcss',
+         options: {
+             postCssPlugins: [require('tailwindcss')('./tailwind.config.js')],
+          },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: { tailwind: true }
+    },
+    {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
         threshold: 0.1,
@@ -36,6 +46,14 @@ module.exports = {
         // The property ID; the tracking code won't be generated without it
         trackingId: "UA-149692233-2",
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://leapcode.io',
+        sitemap: 'https://leapcode.io/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -101,6 +119,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-offline`,
+    //`gatsby-plugin-offline`,
   ],
 }

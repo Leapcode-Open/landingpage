@@ -49,19 +49,19 @@ const Layout = ({ children }) => {
               <div className='rt'>
                 <div className="flex justify-between items-center">
                   <div className="w-24 ml-4">
-                    <img  src="/CEChallenge-P1Winner2.png" />
+                    <img alt="GNOME Challenge Winners" src="/CEChallenge-P1Winner2.png" />
                   </div>
 
                   <div className="flex flex-col md:items-end px-6 md:px-0">
                     <span className="text-white opacity-75 font-gt block mb-2 text-sm">Supported By</span>
-                    <a href="https://builders.mozilla.community/" target="_blank"><img className='w-32' src="https://builders.mozilla.community/assets/img/mozilla-builders-logo.png"></img></a>
+                    <a href="https://builders.mozilla.community/" target="_blank"><img className='w-32' alt="Mozilla Builders" src="https://builders.mozilla.community/assets/img/mozilla-builders-logo.png"></img></a>
                   </div>
 
                   
                 </div>
                 
                 <div className="rt text-sm md:text-right flex items-center md:justify-end md:items-center px-6 md:px-0">
-                  <img className="w-10 mb-0" src={require('../assets/images/leapcode-logo-circle.svg')}></img>
+                  <img  alt="Leapcode" className="w-10 mb-0" src={require('../assets/images/leapcode-logo-circle.svg')}></img>
                   <span className="text-gray-400 opacity-75 font-gt ml-4">Ⓒ 2020 Leapcode</span>
                 </div>
               </div>
