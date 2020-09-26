@@ -156,8 +156,8 @@ class IndexPage extends Component {
               <img alt='Leapcode Logo' className="md:w-1/3 w-1/2 mx-auto mb-12" src={require('../assets/images/leapcode-logo--new.svg')} />
               <h1 className="w-full text-3xl md:text-5xl text-newblue-900 font-gt">{}Kick start your  open <br /> source contribution{}</h1>
               <p className=" font-gt text-base md:text-lg text-newblue-900 leading-relaxed tracking-wide letter">Leapcode helps you contribute to open source projects right from your first pull request to working on major projects</p>
-              <div className="flex mt-8 align-center justify-center">
-                <a href="https://app.leapcode.io/login?ghlogin=true" rel="nofollow" className=" hover:bg-black bg-gray-900 text-white font-gt inline-block font-semibold px-6 py-3 text-sm md:text-base rounded-lg "><div className="flex"><img className="w-6 h-6 mb-0 mr-3" src={require('../images/github-logo.svg')} /><span>Sign in using Github</span></div> </a>
+              <div className="md:flex flex-col md:flex-row mt-8 align-center justify-center">
+                <a href="https://app.leapcode.io/login?ghlogin=true" rel="nofollow" className=" hover:bg-black bg-gray-900 text-white font-gt inline-block font-semibold px-6 py-3 text-sm md:text-base rounded-lg "><div className="flex"><img className="w-6 h-6 mb-0 mr-3" src={require('../images/github-logo.svg')} /><span>Sign in with Github</span></div> </a>
                 <button  onClick={this.runSurvey} className="bg-white hover:bg-gray-200 px-6 py-3 text-base rounded-lg font-gt font-bold text-newblue-900 ml-1">Request access</button>
               </div>
             </div>
@@ -249,7 +249,7 @@ class IndexPage extends Component {
           <div className="max-w-screen-md mx-auto px-6 md:px-2">
             <h2 className="text-3xl md:text-4xl font-gt text-white">Contributing to open source is now <br />easy & rewarding</h2>
             <p className="font-gt text-white  leading-relaxed tracking-wide">A lot of first time contributors face issues in finding a project, figuring out what to contribute, understanding the repo etc. With Leapcode, we are empowering first time contributors by motivating & rewarding each step they take towards the contribution.</p>
-            <button  onClick={this.runSurvey} className="bg-white hover:bg-gray-200 px-6 py-3 text-base rounded-lg mt-8 font-gt font-bold text-newblue-900">Get Early Access</button>
+            <button  onClick={this.runSurvey} className="bg-white hover:bg-gray-200 px-6 py-3 text-base rounded-lg mt-8 font-gt font-bold text-newblue-900">Request Access</button>
           </div>
         </div>
 
