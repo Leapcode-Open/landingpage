@@ -144,7 +144,7 @@ class IndexPage extends Component {
       <Layout>
         <SEO title="Leapcode - Make your first open source contribution" />
         <SurveyModel onClose={this.onClose} isOpen={this.state.sur} />
-        <div className="py-3 w-screen text-center text-sm font-gt bg-gray-800 font-bold text-white">Leapcode is a winner of the Community Engagement Challenge - Phase One🎉 by GNOME & Endless - <a className='font-bold hover:underline' href="https://www.gnome.org/challenge/phase-one-winners/">Read more</a></div>
+        {/* <div className="py-3 w-screen text-center text-sm font-gt bg-gray-800 font-bold text-white">Leapcode is a winner of the Community Engagement Challenge - Phase One🎉 by GNOME & Endless - <a className='font-bold hover:underline' href="https://www.gnome.org/challenge/phase-one-winners/">Read more</a></div> */}
         <div className="">
 
     
@@ -152,7 +152,7 @@ class IndexPage extends Component {
           <div className="flex justify-center">
 
          
-            <div className="w-full md:w-2/3 text-center px-6 md:px-0">
+            <div className="w-full md:w-2/3  text-center px-6 md:px-0">
               <img alt='Leapcode Logo' className="md:w-1/3 w-1/2 mx-auto mb-12" src={require('../assets/images/leapcode-logo--new.svg')} />
               <h1 className="w-full text-3xl md:text-5xl text-newblue-900 font-gt">{}Kick start your  open <br /> source contribution{}</h1>
               <p className=" font-gt text-base md:text-lg text-newblue-900 leading-relaxed tracking-wide letter">Leapcode helps you contribute to open source projects right from your first pull request to working on major projects</p>
@@ -162,7 +162,7 @@ class IndexPage extends Component {
 
                 </div>
                 <div>
-                  <button  onClick={this.runSurvey} className="bg-white hover:underline px-6 py-3 text-base rounded-lg font-gt font-regular mt-4 text-newblue-900 ml-1">Request access</button>
+                  <button  onClick={this.runSurvey} className="bg-white underline px-6 py-3 text-base rounded-lg font-gt font-regular mt-4 text-newblue-900 ml-1">Request access</button>
 
                 </div>
               </div>
@@ -178,10 +178,10 @@ class IndexPage extends Component {
         </div>  
 
 
-        <div className="bg-blue-100 p-8 rounded-lg mt max-w-2xl mx-auto my-20 text-center">
-          <h3 className="text-xl font-gt text-blue-800 font-bold">Easy way to start and be part of Hacktoberfest</h3>
+        <div className="bg-newblue-100 p-8 rounded-lg mt max-w-2xl mx-auto my-4 text-center">
+          <h3 className="text-xl font-gt text-blue-800 font-bold">Easy way to start and be part of <a href="https://hacktoberfest.digitalocean.com/" >Hacktoberfest</a></h3>
           <p className="text-base font-gt mb-0">Participating in hacktoberfest? We are listing some amazing projects & resources to help you make your open source contributions easy.</p>
-          {/* <a   onClick={this.runSurvey}  className="font-gt font-bold text-blue-800 hover:underline" href='#'>Sign up for access</a> */}
+          {/* <a rel="nofollow" target="_blank" href="https://hacktoberfest.digitalocean.com/"  className="font-gt font-bold text-blue-800 hover:underline" href='#'>Learn more</a> */}
         </div>
 
 
