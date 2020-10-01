@@ -1,4 +1,4 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+
 <p align="center">
   <a href="https://www.leapcode.io">
     leapcode.io
@@ -13,24 +13,14 @@ Leapcode is an online platform that motivates & rewards open source contributors
 
 ## 🚀 Quick start
 
-**To get started with contributing to this project & read the complete documentation, signup on https://leapcode.io**
+**To get started with making your first PR on this project, read the complete documentation, signup on https://leapcode.io** Please note that this is for first time contributors.
 
-If you are here as part of your first PR project, please ignore the below steps.
+And, If you are here as part of your first PR project, please ignore the below steps.
 
-If you are here to contribute to the leapcode landing page, here is how to setup your local.
+If you are here to improve the leapcode landing page, here is how to setup your local.
 
-1.  **Start developing.**
-
-    Navigate into landingpage directory and start it up.
-
-    ```shell
-    cd landingpage/
-    gatsby develop
-    ```
-
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+1.  Fork this repo to your own GitHub account and then clone it your local device
+2.  Create a new branch ``` git checkout -b MY_BRANCH_NAME ```
+3.  Install ``` yarn: npm install -g yarn ```
+4.  Install the dependencies: ``` yarn ```
+5.  Run ``` yarn start ``
