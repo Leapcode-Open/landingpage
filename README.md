@@ -23,4 +23,4 @@ If you are here to improve the leapcode landing page, here is how to setup your 
 2.  Create a new branch ``` git checkout -b MY_BRANCH_NAME ```
 3.  Install ``` yarn: npm install -g yarn ```
 4.  Install the dependencies: ``` yarn ```
-5.  Run ``` yarn start ``
+5.  Run ``` yarn start ```
