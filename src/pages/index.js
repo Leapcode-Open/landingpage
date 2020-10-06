@@ -97,7 +97,7 @@ const SurveyModel = ({ isOpen, onClose }) => (
       </div>
       <div class="modal-content bg-white  text-left w-full mx-auto">
         {/* <div id="smcx-sdk" className="z-40" />     */}
-        <ReactTypeformEmbed style={{ height:'500px', width:'100%', position:'relative' }} url="https://leapcode-open.typeform.com/to/YKAb4w" />
+        <ReactTypeformEmbed style={{ height:'500px', width:'100%', position:'relative' }} url="https://form.typeform.com/to/GVCzFy" />
       </div>
     </div>
    
