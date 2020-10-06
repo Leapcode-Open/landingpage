@@ -77,7 +77,7 @@ module.exports = {
         mergeDefaultDirectives: true,
         directives: {
           "default-src":
-            "https://www.google-analytics.com/analytics.js https://admin.typeform.com https://leapcode-open.typeform.com https://platform.twitter.com/widgets.js 'self'",
+            "https://www.google-analytics.com/analytics.js https://admin.typeform.com https://leapcode-open.typeform.com https://form.typeform.com https://platform.twitter.com/widgets.js 'self'",
           "script-src":
             " https://platform.twitter.com 'sha256-ct2ul3tmQwO//X+tqlLeQbGOvWcZJ3vBSraHKMPaDOY=' 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8=' 'sha256-FygwTyyNyFVibb7rPNCVVw98peWZsZk06ALGbPpsPoE=' https://www.google-analytics.com/analytics.js 'sha256-egpbluqkD8NT0bY3bWy7raM9tRIMkfUWboq0Y8KqsFk=' 'sha256-gFwjVoZ8jocp7hP8BFUAJo6HP1OP6rZ+jlawwbTt4dU=' 'sha256-9rDtk+eCfSZMH5bqJEJPRJlsw2Fepy9yQy9Ml4GKtjc=' 'sha256-oZ6gE60ANBQSKT5wZmZOY1oAn6OebcXxdomyRFYB/8Y='  https://admin.typeform.com 'self'",
           "script-src-elem":
