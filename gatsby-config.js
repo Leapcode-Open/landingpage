@@ -88,7 +88,7 @@ module.exports = {
           "img-src":
             "https://www.google-analytics.com https://builders.mozilla.community/assets/img/mozilla-builders-logo.png data: 'self'",
           "frame-src":
-            "https://platform.twitter.com https://platform.twitter.com/widgets.js https://leapcode-open.typeform.com  https://form.typeform.com'self'",
+            "https://platform.twitter.com https://platform.twitter.com/widgets.js https://leapcode-open.typeform.com  https://form.typeform.com 'self'",
           "object-src": "'none'",
           "media-src": "'self'",
           "connect-src": "https://www.google-analytics.com 'self'",
