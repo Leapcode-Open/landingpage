@@ -40,7 +40,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: `/contributor/${node.frontmatter.username}`,
+      path: `/contributor/${node.frontmatter.username.toLowerCase()}`,
       component: contributorTemplate,
       context: {
         // additional data can be passed via context
