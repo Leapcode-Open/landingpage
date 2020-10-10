@@ -234,7 +234,7 @@ class IndexPage extends Component {
               <div className="grid gap-4 grid-cols-3 text-left mt-10">
                   {
                     this.props.data.allMarkdownRemark.edges.filter(c => c.node.frontmatter.username != 'sethusathyan').map(contrib => (
-                      <a key={contrib.node.frontmatter.username} href={`/contributor/${contrib.node.frontmatter.username}`} className="border cursor-pointer border-gray-300 p-3 shadow-sm hover:shadow-lg transition transition-duration-100 rounded">
+                      <a key={contrib.node.frontmatter.username} href={`/contributor/${contrib.node.frontmatter.username.toLowerCase()}`} className="border cursor-pointer border-gray-300 p-3 shadow-sm hover:shadow-lg transition transition-duration-100 rounded">
                         <h6 className="font-gt text-base mb-2">{contrib.node.frontmatter.name}</h6>
                         <p  className="font-gt text-sm mb-0">{contrib.node.frontmatter.bio}</p>
                       </a>
