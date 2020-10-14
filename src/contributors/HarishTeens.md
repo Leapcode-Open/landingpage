@@ -1,5 +1,5 @@
 ---
 username: "HarishTeens"
-name: "Harish Ramesh Babu"
-bio: "wannabe linux power user!"
+name: "Harish"
+bio: "dont code alone, code for the community"
 ---
