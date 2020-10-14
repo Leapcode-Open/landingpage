@@ -1,5 +1,5 @@
 ---
 username: "kiransbaliga"
-name:"Kiran S Baliga"
-bio:" I convert coffee to code "
+name: "Kiran S Baliga"
+bio: "I convert coffee to code"
 ---
