@@ -23,6 +23,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       ) {
         edges {
           node {
+            fileAbsolutePath
+            excerpt(format: PLAIN)
             frontmatter {
               username
             }
@@ -39,14 +41,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: `/contributor/${node.frontmatter.username.toLowerCase()}`,
-      component: contributorTemplate,
-      context: {
-        // additional data can be passed via context
-        username: node.frontmatter.username,
-      },
-    })
+      createPage({
+        path: `/contributor/${node.frontmatter.username.toLowerCase()}`,
+        component: contributorTemplate,
+        context: {
+          // additional data can be passed via context
+          username: node.frontmatter.username,
+        },
+      })
   })
 
 
