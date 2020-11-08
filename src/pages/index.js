@@ -148,7 +148,7 @@ class IndexPage extends Component {
         <div className="">
 
     
-        <div className="max-w-screen-lg mx-auto mt-12 md:mt-16">
+        <div className="max-w-screen-lg mx-auto mt-12 md:mt-32">
           <div className="flex justify-center">
 
          
@@ -177,19 +177,7 @@ class IndexPage extends Component {
 
         </div>  
 
-
-        <div className="bg-newblue-100 p-8 rounded-lg mt max-w-2xl mx-auto my-4 text-center">
-          <h3 className="text-xl font-gt text-blue-800 font-bold">Easy way to start and be part of <a href="https://hacktoberfest.digitalocean.com/" >Hacktoberfest</a></h3>
-          <p className="text-base font-gt mb-0">Participating in hacktoberfest? We are listing some amazing projects & resources to help you make your open source contributions easy.</p>
-          {/* <a rel="nofollow" target="_blank" href="https://hacktoberfest.digitalocean.com/"  className="font-gt font-bold text-blue-800 hover:underline" href='#'>Learn more</a> */}
-        </div>
-
-
-
-
-
-
-        <div className="bg-newblue-100 mt-12 md:mt-64 py-12 md:pt-32 md:pb-24 steps--container">
+        <div className="bg-newblue-100 mt-12 md:mt-32 py-12 md:pt-32 md:pb-24 steps--container">
           <div className="max-w-screen-lg mx-auto">
             <div className="flex steps-section justify-center ">
               {/* <div className="md:w-1/2"></div> */}
