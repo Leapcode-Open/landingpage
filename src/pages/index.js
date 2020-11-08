@@ -148,7 +148,7 @@ class IndexPage extends Component {
         <div className="">
 
     
-        <div className="max-w-screen-lg mx-auto mt-12 md:mt-16">
+        <div className="max-w-screen-lg mx-auto mt-12 md:mt-32">
           <div className="flex justify-center">
 
          
@@ -177,7 +177,7 @@ class IndexPage extends Component {
 
         </div>  
 
-        <div className="bg-newblue-100 mt-12 md:mt-64 py-12 md:pt-32 md:pb-24 steps--container">
+        <div className="bg-newblue-100 mt-12 md:mt-32 py-12 md:pt-32 md:pb-24 steps--container">
           <div className="max-w-screen-lg mx-auto">
             <div className="flex steps-section justify-center ">
               {/* <div className="md:w-1/2"></div> */}
