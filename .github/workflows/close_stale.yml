@@ -14,5 +14,5 @@ jobs:
         stale-pr-message: 'No activity recorded in this PR for the past 30 days. This PR will be closed in 2 days.'
         close-issue-message: 'Closing stale issue.' 
         close-pr-message: 'Closing stale PR'
-        days-before-stale: 30
-        days-before-close: 2
+        days-before-stale: 60
+        days-before-close: 5
