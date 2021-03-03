@@ -13,7 +13,7 @@ Leapcode is an online platform that motivates & rewards open source contributors
 
 ## 🚀 Quick start
 
-[![Contribute with Leapcode](https://img.shields.io/badge/Leapcode-Contribute%20with%20leapcode-brightgreen)](https://app.leapcode.io/)
+[![Contribute with Leapcode](https://img.shields.io/badge/Leapcode-Contribute%20with%20leapcode-brightgreen?style=for-the-badge)](https://app.leapcode.io/)
 
 **To get started with making your first PR on this project, read the complete documentation, signup on https://leapcode.io** Please note that this is for first time contributors.
 
