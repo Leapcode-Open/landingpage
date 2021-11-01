@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Comment on PR
-        uses: thollander/actions-comment-pull-request@master
+        uses: thollander/actions-comment-pull-request@main
         with:
           message: "Link this pull request on leapcode.io at https://app.leapcode.io/v3/project/first-pull-request-pr/activity/pr-approved and earn points 🔥"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
